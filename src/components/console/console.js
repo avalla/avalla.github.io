@@ -145,8 +145,14 @@ const Console = ({ setShowConsole }) => {
         }, 100)
       },
     },
+    echo: {
+      description: 'Echo a passed string.',
+      usage: 'echo <string>',
+      fn: (...args) => args.join(' ')
+    },
     show: {
-      description: "Shows <bio|contacts|skills>",
+      description: "Shows informations",
+      usage: 'show <bio|contacts|skills>',
       fn: (type) => {
         switch (type) {
           case "bio":
