@@ -13,18 +13,13 @@ export default function TechnicalSkills() {
           <strong>NodeJs, Express, Koa, GraphQL, AspMVC, Php</strong>
           <br />
           Mobile&nbsp;
-          <strong>
-            iOS, basic knowledge of android development
-          </strong>
+          <strong> iOS, basic knowledge of android development </strong>
           <br />
           Testing&nbsp;
           <strong>Jest, Cypress</strong>
           <br />
           Languages&nbsp;
           <strong>Javascript, C#, Swift, Php, Objective-C</strong>
-          <br />
-          Tools&nbsp;
-          <strong>Lerna</strong>
           <br />
           Databases&nbsp;
           <strong>MongoDb, SqlServer, MySql, Sqlite, Oracle</strong>

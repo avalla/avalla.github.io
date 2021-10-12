@@ -30,8 +30,7 @@ export default function ProfessionalExperience() {
             Agile Factory
           </a>
           ,MES solution for SMEs. Helps manufacturing industries to accelerate their production processes, showing
-          workers and machine data in realtime. Agile Factory is connected to IIOT devices via OPC-UA or MQTT and
-          communicates with customer's ERPs.
+          data in realtime. Connected to IIOT devices via OPC-UA or MQTT and communicates with customer's ERPs.
         </p>
         <p className="is-italic">
           NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, Elastic Search, Mysql, MongoDb, Redis, Github, Docker,
@@ -62,7 +61,6 @@ export default function ProfessionalExperience() {
           jQuery, KnockoutJS, Twitter Bootstrap, Sharepoint
         </p>
       </article>
-      <hr />
       <div className="pagebreak" />
       <h2 className="title is-2 print-only">
         Professional experience (continue)

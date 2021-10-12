@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%; /* 1rem = 10px */
     @media print {
-      font-size: 42.5%;
+      font-size: 35% !important;
     }
   }
 
