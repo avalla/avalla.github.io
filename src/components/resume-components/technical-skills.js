@@ -24,7 +24,7 @@ export default function TechnicalSkills() {
           <strong>Javascript, C#, Swift, Php, Objective-C</strong>
           <br />
           Tools&nbsp;
-          <strong>Docker, Lerna</strong>
+          <strong>Lerna</strong>
           <br />
           Databases&nbsp;
           <strong>MongoDb, SqlServer, MySql, Sqlite, Oracle</strong>
@@ -36,7 +36,7 @@ export default function TechnicalSkills() {
           <strong>Linux, Unix, MacOSX, Windows</strong>
           <br />
           Devops&nbsp;
-          <strong>CI/CD with gitlab pipelines</strong>
+          <strong>Docker, CI/CD on Github and GitLab</strong>
           <br />
           Cloud&nbsp;
           <strong>Azure, AWS</strong>

@@ -7,7 +7,7 @@ export default function ProfessionalSummary() {
       <article>
         <p>
           Experienced full stack programmer: developed enterprise level and
-          scalable web applications. Experience in both client side and server
+          scalable web applications. Experience in both client and server
           side programming.
         </p>
         <p>

@@ -3,7 +3,7 @@ import styled from "styled-components"
 import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTerminal, faFilePdf } from "@fortawesome/free-solid-svg-icons"
-import { savePDF } from "../libs/helpers"
+import { savePDF } from "../services/helpers"
 
 const StyledHeader = styled.header`
   padding: 6rem 0 2rem;
@@ -59,7 +59,7 @@ const Header = ({ setShowConsole }) => (
         />
       </a>
       <a
-        href="https://stackoverflow.com/users/876314"
+        href="https://stackoverflow.com/story/avalla"
         aria-label="github"
         rel="noreferrer"
         target="_blank"

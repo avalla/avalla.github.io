@@ -43,45 +43,30 @@ const IndexPage = () => (
       <div className="columns">
         {/*MAIN*/}
         <div className="column is-8">
-          {/*PROFESSIONAL SUMMARY*/}
           <section className="section">
             <ProfessionalSummary />
           </section>
-          {/*TECHNICAL SKILLS*/}
           <section className="section">
             <TechnicalSkills />
           </section>
-          {/*PROFESSIONAL EXPERIENCE*/}
           <section className="section">
             <ProfessionalExperience />
           </section>
         </div>
         {/*SIDEBAR*/}
         <div className="column is-4">
-          {/*INFORMATIONS*/}
           <section className="section">
             <Informations />
           </section>
-          {/*LANGUAGES*/}
           <section className="section">
             <Languages />
           </section>
-          {/*EDUCATION*/}
           <section className="section">
             <Education />
           </section>
-          {/*OTHER PROJECTS*/}
           <section className="section">
             <OtherProjects />
           </section>
-          {/*          <section className="section">
-            <h2 className="title is-2">
-              Console
-            </h2>
-            <article>
-              <Console />
-            </article>
-          </section>*/}
         </div>
       </div>
     </Layout>

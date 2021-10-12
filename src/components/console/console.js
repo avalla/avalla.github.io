@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Terminal from "react-console-emulator"
 import styled from "styled-components"
 import "jetbrains-mono"
-import { savePDF } from "../../libs/helpers"
+import { savePDF } from "../../services/helpers"
 import pkg from "../../../package.json"
 
 const VERSION = pkg.version

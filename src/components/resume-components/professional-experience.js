@@ -18,9 +18,7 @@ export default function ProfessionalExperience() {
           <small className="has-text-weight-light">Turin, Italy</small>
         </p>
         <p>
-          Developed web applications for the manufacturing industry, created an
-          internal infrastructure with CI/CD using self-hosted Gitlab. PM using
-          GitLab issues and milestones.
+          Developed web applications for manufacturing industry, from analysis to customer deployments and updates.
         </p>
         <p>
           Last project is&nbsp;
@@ -31,28 +29,13 @@ export default function ProfessionalExperience() {
           >
             Agile Factory
           </a>
-          , a MES solution for SMEs. It helps manufacturing industries to
-          accelerate their production processes, showing workers and machine
-          data in realtime. Agile Factory is connected to IIOT devices via MQTT
-          or OPC-UA and communicates with customer's ERPs.
+          ,MES solution for SMEs. Helps manufacturing industries to accelerate their production processes, showing
+          workers and machine data in realtime. Agile Factory is connected to IIOT devices via OPC-UA or MQTT and
+          communicates with customer's ERPs.
         </p>
-        {/*<p>*/}
-        {/*  As the only developer I made several choices to make my work faster,*/}
-        {/*  for example every customer has different customizations, so I*/}
-        {/*  developed a basic plugin system similar to Wordpress Hooks. Another*/}
-        {/*  issue was related to application end to end testing and manual*/}
-        {/*  generation, I used Cypress for end-to-end testing and take screenshots*/}
-        {/*  then Docusaurus to generate user's manual. I'm also responsible for*/}
-        {/*  customer deployments, upgrades, customization and bug fixing. I*/}
-        {/*  also learned how to create and communicate with OPC-UA servers. The*/}
-        {/*  application is also installable with an installer that is usable on*/}
-        {/*  clean linux installation. It will install all packages needed (nginx,*/}
-        {/*  redis, mongo, etc), then configure them.*/}
-        {/*</p>*/}
         <p className="is-italic">
-          NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, Elastic Search,
-          Mysql, MongoDb, Redis, Gitlab, Docker, Mqtt, OPC-UA, S3, Lerna,
-          Kettle, Sonarqube
+          NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, Elastic Search, Mysql, MongoDb, Redis, Github, Docker,
+          Mqtt, OPC-UA, S3, Lerna, Kettle, Sonarqube
         </p>
       </article>
       <hr />

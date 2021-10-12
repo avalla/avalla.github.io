@@ -17,9 +17,8 @@ export default function OtherProjects() {
           <small className="has-text-weight-light">2020</small>
         </h3>
         <p>
-          This project is used to test the effectiveness of a psychological
-          test. It was developed with Gatsby, React, Redux, FaunaDb and deployed
-          on Netlify (web and functions).
+          Used to test the effectiveness of psychological tests. It was developed with Gatsby, React, Redux, FaunaDb and
+          deployed on Netlify, using web and functions.
         </p>
         <hr />
         <h3 className="title is-3">
@@ -34,11 +33,8 @@ export default function OtherProjects() {
           <small className="has-text-weight-light">2020</small>
         </h3>
         <p>
-          This project is a browser for IPs for movies, serials, comics and
-          books. It was developed with Gatsby, React, Redux, Algolia, Wordpress
-          and deployed on Netlify (only web). Users manage contents with
-          Wordpress panel (every content type is related to a custom post type
-          or taxonomy).
+          IPs Browser for movies, serials, books and comics. Developed with Gatsby, React, Redux, Algolia,
+          and Wordpress, deployed on Netlify (only web). Content managers configure contents on Wordpress panel.
         </p>
       </article>
     </>
