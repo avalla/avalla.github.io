@@ -31,9 +31,9 @@ const Header = ({ setShowConsole }) => (
       Andrea <span className="has-text-link">Valla</span>
     </h1>
     <p className="subtitle is-3 is-uppercase">
-      <small>Full stack developer</small>
+      <small>Solution Architect - Full stack developer</small>
     </p>
-    <div className="badges buttons is-centered">
+    <div className="badges buttons is-centered print-hidden">
       <a
         href="https://linkedin.com/in/avalla"
         aria-label="github"
