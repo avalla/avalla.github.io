@@ -16,7 +16,8 @@ export default function ProfessionalExperience() {
           <small className="has-text-weight-light">Turin, Italy</small>
         </p>
         <p>
-          Developed integrations between BDroppy (a dropshipping application) and external ecommerce platforms (e.g. shopify, squarespace, wix, ekm).
+          Created integrations between BDroppy (a dropshipping application) and external ecommerce platforms (e.g. shopify, squarespace, wix, ekm).
+          Applications published on Shopify AppStore, Wix AppStore.
         </p>
         <p className="is-italic">
           Typescript, NodeJs, React, Jest, Redux, Moleculer, Redis, MongoDb
@@ -31,16 +32,13 @@ export default function ProfessionalExperience() {
         <p className="subtitle is-5 is-uppercase">
           <a href="https://www.agilefactory.it">Agile Factory</a>
           {" - "}
-          Politecnico di Torino Spinoff Company
-          {" :: "}
           <small className="has-text-weight-light">Turin, Italy</small>
         </p>
         <p>
-          Developed MES solution for SMEs. It helps manufacturing industries to accelerate their production processes, showing
-          data in realtime. Connected to IIOT devices via OPC-UA or MQTT and communicates with customer's ERPs via ETL.
+          Created a MES solution for SMEs. It helps manufacturing industries to accelerate their production processes, showing data in realtime. Connected to IIOT devices via OPC-UA or MQTT and communicates with customer's ERPs via ETL. Two different web applications, one backend, communication was made with GraphQL.
         </p>
         <p className="is-italic">
-          NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, MongoDb, Redis, Github, Docker, mqtt, OPC-UA, S3, Lerna, Kettle, Sonarqube
+          NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, MongoDb, Redis, Github, Docker, Mqtt, Moleculer, OPC-UA, S3, Lerna, Kettle, Sonarqube
         </p>
       </article>
       {/*INDUSTRIAL CLOUD*/}
@@ -57,7 +55,7 @@ export default function ProfessionalExperience() {
           <small className="has-text-weight-light">Turin, Italy</small>
         </p>
         <p>
-          Developed web applications for manufacturing industry, from analysis to customer deployments and updates.
+          Created web applications for manufacturing industry, from analysis to customer deployments and updates.
         </p>
         <p className="is-italic">
           NodeJs, React, Elastic Search, Mysql, Php
@@ -80,7 +78,7 @@ export default function ProfessionalExperience() {
           </small>
         </p>
         <p>
-          Developed web interfaces, ETL and reports on Microsoft environment.
+          Created web applications, ETL and reports on Microsoft environment.
         </p>
         <p className="is-italic">
           .net, Javascript, EF, Dapper, SqlServer, SSRS, SSIS, ASPMVC, WebForms,
@@ -101,8 +99,7 @@ export default function ProfessionalExperience() {
           <small className="has-text-weight-light">Turin, Italy</small>
         </p>
         <p>
-          Consultant on different kind of projects, from development to system
-          administration, on Linux, Unix and Microsoft environments.
+          Consultant on different kind of projects, from development to system administration, on Linux, Unix and Microsoft environments.
         </p>
         <p className="is-italic">
           .net, WebForms, Javascript, Linux, Unix, BMC ITSM
