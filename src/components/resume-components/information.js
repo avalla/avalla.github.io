@@ -1,9 +1,9 @@
 import React from "react"
 
-export default function Informations() {
+export default function Information() {
   return (
     <>
-      <h2 className="title is-2">Informations</h2>
+      <h2 className="title is-2">Information</h2>
       <article>
         <p>
           Birth date&nbsp;

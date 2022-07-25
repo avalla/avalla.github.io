@@ -19,7 +19,7 @@ export default function TechnicalSkills() {
           <strong>Jest, Cypress</strong>
           <br />
           Languages&nbsp;
-          <strong>Javascript, C#, Swift, Php, Objective-C</strong>
+          <strong>Javascript, Typescript, C#, Swift, Php, Objective-C</strong>
           <br />
           Databases&nbsp;
           <strong>MongoDb, SqlServer, MySql, Sqlite, Oracle</strong>

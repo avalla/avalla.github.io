@@ -10,6 +10,7 @@ const VERSION = pkg.version
 const WELCOME = `Welcome to the AV terminal emulator ${VERSION}
 Please be careful, it's a beta release
 Write "help" to get available commands`
+
 const BIO = `
 # Andrea Valla's bio
  
@@ -34,7 +35,7 @@ const SKILLS = `
 - Backend: NodeJs, Express, Koa, GraphQL, AspMVC, Php
 - Mobile: iOS, basic knowledge of android development
 - Testing: Jest, Cypress
-- Languages: Javascript, C#, Swift, Php, Objective-C
+- Languages: Javascript, Typescript, C#, Swift, Php, Objective-C
 - Tools: Docker, Lerna
 - Databases: MongoDb, SqlServer, MySql, Sqlite, Oracle
 - Business Intelligence: SSIS, SSRS, Pentaho Kettle, Cubejs
@@ -151,7 +152,7 @@ const Console = ({ setShowConsole }) => {
       fn: (...args) => args.join(' ')
     },
     show: {
-      description: "Shows informations",
+      description: "Shows information",
       usage: 'show <bio|contacts|skills>',
       fn: (type) => {
         switch (type) {

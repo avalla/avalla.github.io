@@ -17,8 +17,8 @@ export default function OtherProjects() {
           <small className="has-text-weight-light">2020</small>
         </h3>
         <p>
-          Used to test the effectiveness of psychological tests. It was developed with Gatsby, React, Redux, FaunaDb and
-          deployed on Netlify, using web and functions.
+          Created a web application that analyze the effectiveness of psychological tests. It was developed with Gatsby, React, Redux, FaunaDb and
+          deployed on Netlify, using functions for backend.
         </p>
         <hr />
         <h3 className="title is-3">
