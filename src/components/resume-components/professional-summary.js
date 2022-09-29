@@ -2,7 +2,7 @@ import React from "react"
 
 export default function ProfessionalSummary() {
   return (
-    <>
+    <section className="section">
       <h2 className="title is-2">Professional summary</h2>
       <article>
         <p>
@@ -20,6 +20,6 @@ export default function ProfessionalSummary() {
         </p>
         <p>Grown with shells, linux user since '95 :)</p>
       </article>
-    </>
+    </section>
   )
 }

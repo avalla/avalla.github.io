@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Information() {
   return (
-    <>
+    <section className="section">
       <h2 className="title is-2">Information</h2>
       <article>
         <p>
@@ -19,6 +19,6 @@ export default function Information() {
           <a href="https://avalla.github.io"><strong>https://avalla.github.io</strong></a>
         </p>
       </article>
-    </>
+    </section>
   )
 }

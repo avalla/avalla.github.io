@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Education() {
   return (
-    <>
+    <section className="section">
       <h2 className="title is-2">Education</h2>
       <article>
         <p>
@@ -27,6 +27,6 @@ export default function Education() {
           <small className="has-text-weight-light">2002</small>
         </p>
       </article>
-    </>
+    </section>
   )
 }

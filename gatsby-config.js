@@ -3,6 +3,7 @@ module.exports = {
     title: `Andrea Valla`,
     description: `Andrea Valla - Full Stack Developer`,
     author: `@avalla`,
+    sources: 'https://github.com/avalla/avalla.github.io',
     contacts: {
       phone: "+39 335 82 30 421",
       email: "valla.andrea@gmail.com",

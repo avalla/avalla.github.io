@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: 'Montserrat', sans-serif;
   }
-
   html {
     font-size: 62.5%; /* 1rem = 10px */
     @media print {
@@ -36,25 +35,30 @@ const GlobalStyle = createGlobalStyle`
       display: block;
     }
   }
+
   @media print {
-    .pagebreak { page-break-before: always; }
+    .pagebreak {
+      page-break-before: always;
+    }
     .section {
       border-top: none !important;
+    }
+    h2.title {
+      text-decoration: underline;
     }
     @page {
       margin-top: 0;
       margin-bottom: 0;
-    }
-    body {
-      padding-top: 50px;
-      padding-bottom: 50px ;
     }
   }
 `
 
 const StyledLayout = styled.div`
   background: linear-gradient(141deg, #f5fafc 0%, #e1f0f6 100%);
-
+  .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
   [data-tooltip]:not(.is-loading)::before,
   [data-tooltip]:not(.is-disabled)::before,
   [data-tooltip]:not([disabled])::before {

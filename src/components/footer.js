@@ -1,5 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import useMetadata from '../hooks/useMetadata';
 
 const StyledFooter = styled.footer`
   font-size: 1.6rem;
@@ -16,6 +20,7 @@ const StyledFooter = styled.footer`
   }
 `
 const Footer = () => {
+  const { contacts } = useMetadata();
   return (
     <StyledFooter className="footer">
       <div className="container">
@@ -25,11 +30,28 @@ const Footer = () => {
             curriculum vitae in base all’art. 13 GDPR 679/16.
           </p>
           <p className="print-hidden">
-            © 1980-{new Date().getFullYear()}
-            {` `}
-            Made in Italy with{" "}
-            <span role="img" aria-label="love">
+            Andrea Valla
+            <br />
+            <a href={`tel:${contacts.phone}`} aria-label="phone">
+              <small>
+                <FontAwesomeIcon icon={faPhone} size="1x" /> {contacts.phone}
+              </small>
+            </a>
+            <br />
+            <a href={`mailto:${contacts.email}`} aria-label="mail">
+              <small>
+                <FontAwesomeIcon icon={faEnvelope} size="1x" /> {contacts.email}
+              </small>
+            </a>
+          </p>
+          <p className="print-hidden">
+            <span className="has-text-white-bis" style={{ fontSize: 10 }}>
+            © {new Date().getFullYear()}
+              {` `}
+              Made in Italy with{" "}
+              <span role="img" aria-label="love">
               ❤️
+            </span>
             </span>
             <span className="is-pulled-right">
               <a
@@ -37,7 +59,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Sources
+                <FontAwesomeIcon icon={faGithub} size="1x" />
               </a>
             </span>
           </p>

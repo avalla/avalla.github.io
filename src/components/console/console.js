@@ -39,7 +39,7 @@ const SKILLS = `
 - Tools: Docker, Lerna
 - Databases: MongoDb, SqlServer, MySql, Sqlite, Oracle
 - Business Intelligence: SSIS, SSRS, Pentaho Kettle, Cubejs
-- Operating systems: Linux, Unix, MacOSX, Windows
+- Operating systems: macOS, Linux, Unix, Windows
 - Devops: CI/CD with gitlab pipelines and github actions
 - Cloud: Azure, AWS
 `

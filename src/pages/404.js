@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const StyledContainer = styled.div`
   h1.not-found {
@@ -16,7 +16,7 @@ const StyledContainer = styled.div`
 const NotFoundPage = () => (
   <StyledContainer>
     <Layout>
-      <SEO title="404: Not found" />
+      <Seo title="404: Not found" />
       <div className="has-text-centered">
         <h1 className="title is-1 not-found">404 =(</h1>
         <p>

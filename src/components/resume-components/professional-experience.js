@@ -2,7 +2,7 @@ import React from "react"
 
 export default function ProfessionalExperience() {
   return (
-    <>
+    <section className="section">
       <h2 className="title is-2">Professional experience</h2>
       {/*IDT*/}
       <article>
@@ -120,6 +120,6 @@ export default function ProfessionalExperience() {
         <p>System and application management on some FCA websites.</p>
         <p className="is-italic">HPUX and custom web applications</p>
       </article>
-    </>
+    </section>
   )
 }

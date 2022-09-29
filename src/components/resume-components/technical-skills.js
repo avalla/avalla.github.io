@@ -2,7 +2,7 @@ import React from "react"
 
 export default function TechnicalSkills() {
   return (
-    <>
+    <section className="section">
       <h2 className="title is-2">Technical skills</h2>
       <article>
         <p>
@@ -28,7 +28,7 @@ export default function TechnicalSkills() {
           <strong>SSIS, SSRS, Pentaho Kettle, Cubejs</strong>
           <br />
           Operating systems&nbsp;
-          <strong>Linux, Unix, MacOSX, Windows</strong>
+          <strong>macOS, Linux, Unix, Windows</strong>
           <br />
           Devops&nbsp;
           <strong>Docker, CI/CD on Github and GitLab</strong>
@@ -37,6 +37,6 @@ export default function TechnicalSkills() {
           <strong>Azure, AWS</strong>
         </p>
       </article>
-    </>
+    </section>
   )
 }

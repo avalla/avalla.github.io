@@ -2,7 +2,7 @@ import React from "react"
 
 export default function OtherProjects() {
   return (
-    <>
+    <section className="section">
       <h2 className="title is-2">Other projects</h2>
       <article>
         <h3 className="title is-3">
@@ -37,6 +37,6 @@ export default function OtherProjects() {
           and Wordpress, deployed on Netlify (only web). Content managers configure contents on Wordpress panel.
         </p>
       </article>
-    </>
+    </section>
   )
 }

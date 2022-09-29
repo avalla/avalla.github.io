@@ -2,11 +2,12 @@ import React from "react"
 import styled from "styled-components"
 
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
+import useResponsive from '../hooks/useResponsive';
 import ProfessionalSummary from "../components/resume-components/professional-summary"
 import TechnicalSkills from "../components/resume-components/technical-skills"
 import ProfessionalExperience from "../components/resume-components/professional-experience"
-import Informations from "../components/resume-components/information"
+import Information from "../components/resume-components/information"
 import Languages from "../components/resume-components/languages"
 import Education from "../components/resume-components/education"
 import OtherProjects from "../components/resume-components/other-projects"
@@ -36,41 +37,47 @@ const StyledContainer = styled.div`
   }
 `
 
-const IndexPage = () => (
-  <StyledContainer>
-    <SEO title="Andrea Valla" />
-    <Layout>
-      <div className="columns">
-        {/*MAIN*/}
-        <div className="column is-8">
-          <section className="section">
+const IndexPage = () => {
+  const { isMobile } = useResponsive();
+
+  if (isMobile) {
+    return (
+      <StyledContainer>
+        <Seo title="Andrea Valla" />
+        <Layout>
+          <Information />
+          <Languages />
+          <ProfessionalSummary />
+          <TechnicalSkills />
+          <ProfessionalExperience />
+          <Education />
+          <OtherProjects />
+        </Layout>
+      </StyledContainer>
+    )
+  }
+  return (
+    <StyledContainer>
+      <Seo title="Andrea Valla" />
+      <Layout>
+        <div className="columns">
+          {/*MAIN*/}
+          <div className="column is-8">
             <ProfessionalSummary />
-          </section>
-          <section className="section">
             <TechnicalSkills />
-          </section>
-          <section className="section">
             <ProfessionalExperience />
-          </section>
-        </div>
-        {/*SIDEBAR*/}
-        <div className="column is-4">
-          <section className="section">
-            <Informations />
-          </section>
-          <section className="section">
+          </div>
+          {/*SIDEBAR*/}
+          <div className="column is-4">
+            <Information />
             <Languages />
-          </section>
-          <section className="section">
             <Education />
-          </section>
-          <section className="section">
             <OtherProjects />
-          </section>
+          </div>
         </div>
-      </div>
-    </Layout>
-  </StyledContainer>
-)
+      </Layout>
+    </StyledContainer>
+  )
+}
 
 export default IndexPage

@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Languages() {
   return (
-    <>
+    <section className="section">
       <h2 className="title is-2">Languages</h2>
       <article>
         <p>
@@ -13,6 +13,6 @@ export default function Languages() {
           <strong>German</strong> Beginner
         </p>
       </article>
-    </>
+    </section>
   )
 }
