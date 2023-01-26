@@ -7,7 +7,7 @@ export default function ProfessionalExperience() {
       {/*IDT*/}
       <article>
         <h4 className="title is-4 is-uppercase">
-          Full stack developer :: {" "}
+          Full stack developer and system administrator :: {" "}
           <small className="has-text-weight-light">Feb 2022 - Today</small>
         </h4>
         <p className="subtitle is-5 is-uppercase">
@@ -18,9 +18,10 @@ export default function ProfessionalExperience() {
         <p>
           Created integrations between BDroppy (a dropshipping application) and external ecommerce platforms (e.g. shopify, squarespace, wix, ekm).
           Applications published on Shopify AppStore, Wix AppStore.
+          Created BI platform to analyze costs and ROI, using BigQuery, AirByte, CubeJs, DataStudio
         </p>
         <p className="is-italic">
-          Typescript, NodeJs, React, Jest, Redux, Moleculer, Redis, MongoDb
+          Typescript, NodeJs, React, Jest, Redux, Moleculer, Redis, MongoDb, BigQuery, Shopify, Sonarqube
         </p>
       </article>
       {/*AGILE FACTORY*/}

@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-
 import Layout from "../layouts/layout"
 import Seo from "../components/seo"
 import useResponsive from '../hooks/useResponsive';

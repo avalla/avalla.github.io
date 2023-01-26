@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Andrea Valla`,
-    description: `Andrea Valla - Full Stack Developer`,
+    description: `Andrea Valla - Solution architect | Full Stack Developer`,
     author: `@avalla`,
     sources: 'https://github.com/avalla/avalla.github.io',
     contacts: {
