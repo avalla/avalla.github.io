@@ -17,11 +17,11 @@ export default function ProfessionalExperience() {
         </p>
         <p>
           Created integrations between BDroppy (a dropshipping application) and external ecommerce platforms (e.g. shopify, squarespace, wix, ekm).
-          Applications published on Shopify AppStore, Wix AppStore.
+          Applications published on Shopify AppStore, Wix AppStore.<br />
           Created BI platform to analyze costs and ROI, using BigQuery, AirByte, CubeJs, DataStudio
         </p>
         <p className="is-italic">
-          Typescript, NodeJs, React, Jest, Redux, Moleculer, Redis, MongoDb, BigQuery, Shopify, Sonarqube
+          Typescript, NodeJs, React, Jest, Redux, Moleculer, Redis, MongoDb, BigQuery, CubeJs, Shopify, Sonarqube
         </p>
       </article>
       {/*AGILE FACTORY*/}
