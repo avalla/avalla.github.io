@@ -22,10 +22,10 @@ export default function TechnicalSkills() {
           <strong>Javascript, Typescript, C#, Swift, Php, Objective-C</strong>
           <br />
           Databases&nbsp;
-          <strong>MongoDb, SqlServer, BigQuery, Postgresql, MySql, Sqlite, Oracle</strong>
+          <strong>MongoDb, BigQuery, Postgresql, SqlServer, MySql, Sqlite, Oracle</strong>
           <br />
-          Business Intelligence&nbsp;
-          <strong>SSIS, SSRS, Pentaho Kettle, Cubejs, BigQuery, Airbyte</strong>
+          Business Intelligence and DataWarehouse&nbsp;
+          <strong>Cubejs, BigQuery, Airbyte, SSIS, SSRS, Pentaho Kettle</strong>
           <br />
           Operating systems&nbsp;
           <strong>macOS, Linux, Unix, Windows</strong>
