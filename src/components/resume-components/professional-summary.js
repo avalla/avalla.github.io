@@ -1,25 +1,24 @@
-import React from "react"
+import React from 'react';
 
 export default function ProfessionalSummary() {
   return (
-    <section className="section">
-      <h2 className="title is-2">Professional summary</h2>
+    <section className='section'>
+      <h2 className='title is-2'>Professional summary</h2>
       <article>
         <p>
-          Experienced full stack programmer: developed enterprise level and
-          scalable web applications. Experience in both client and server
-          side programming.
+          Experienced Full Stack Developer: Crafting enterprise-level and highly scalable web applications with
+          precision. Proficient in both client and server-side programming, ensuring comprehensive solutions.
         </p>
-        <p>
-          Background in all steps of software engineering including analysis,
-          design, coding, testing and implementation.
+        <p> Well-versed in all facets of software engineering, from meticulous analysis and thoughtful design to
+          flawless coding, rigorous testing, and seamless implementation.
         </p>
-        <p>
-          Enjoy learning and staying current on bleeding edge technology,
-          systems, libraries and frameworks.
+        <p> Passionate about continuous learning and embracing cutting-edge technology, staying at the forefront of
+          evolving systems, libraries, and frameworks.
         </p>
-        <p>Grown with shells, linux user since '95 :)</p>
+        <p> A seasoned Linux user since '95, with a deep-rooted affinity for shells and a passion for mastering the
+          command line.
+        </p>
       </article>
     </section>
-  )
+  );
 }

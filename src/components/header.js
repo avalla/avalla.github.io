@@ -38,7 +38,7 @@ const Header = ({ setShowConsole }) => {
         Andrea <span className="has-text-link">Valla</span>
       </h1>
       <p className="subtitle is-3 is-uppercase">
-        <small>Solution Architect - Full stack developer - Data Engineer</small>
+        <small>Solution Architect - Full stack developer - BI developer</small>
       </p>
       <div className="badges buttons is-centered print-hidden">
         <a

@@ -23,6 +23,10 @@ const StyledContainer = styled.div`
 
     article:not(:last-child) {
       margin-bottom: 2rem;
+
+      @media print {
+        margin-bottom: 1rem;
+      }
     }
 
     section {
