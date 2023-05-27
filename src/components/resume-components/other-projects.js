@@ -1,42 +1,45 @@
-import React from "react"
+import React from 'react';
 
 export default function OtherProjects() {
   return (
-    <section className="section">
-      <h2 className="title is-2">Other projects</h2>
+    <section className='section'>
+      <h2 className='title is-2'>Other projects</h2>
       <article>
-        <h3 className="title is-3">
+        <h3 className='title is-3'>
           <a
-            href="https://malingering.netlify.app"
-            rel="noreferrer"
-            target="_blank"
+            href='https://malingering.netlify.app'
+            rel='noreferrer'
+            target='_blank'
           >
             Malingering
           </a>
-          {" :: "}
-          <small className="has-text-weight-light">2020</small>
+          {' :: '}
+          <small className='has-text-weight-light'>2020</small>
         </h3>
         <p>
-          Created a web application that analyze the effectiveness of psychological tests. It was developed with Gatsby, React, Redux, FaunaDb and
-          deployed on Netlify, using functions for backend.
+          Developed a Gatsby-based web application for analyzing the effectiveness of psychological tests. Utilized
+          technologies such as React, Redux, FaunaDB, and deployed on Netlify. Leveraged serverless functions for
+          backend functionality.
         </p>
         <hr />
-        <h3 className="title is-3">
+        <h3 className='title is-3'>
           <a
-            href="https://spherecontents.com/"
-            rel="noreferrer"
-            target="_blank"
+            href='https://spherecontents.com/'
+            rel='noreferrer'
+            target='_blank'
           >
             Sphere Contents
           </a>
-          {" :: "}
-          <small className="has-text-weight-light">2020</small>
+          {' :: '}
+          <small className='has-text-weight-light'>2020</small>
         </h3>
         <p>
-          IPs Browser for movies, serials, books and comics. Developed with Gatsby, React, Redux, Algolia,
-          and Wordpress, deployed on Netlify (only web). Content managers configure contents on Wordpress panel.
+          Developed an IPs Browser web application for movies, serials, books, and comics. Leveraged Gatsby, React,
+          Redux, Algolia, and Wordpress to create a dynamic and interactive user experience. Deployed on Netlify for web
+          access. Utilized a user-friendly Wordpress panel for content managers to configure and update the
+          application's contents.
         </p>
       </article>
     </section>
-  )
+  );
 }

@@ -15,8 +15,6 @@ const StyledFooter = styled.footer`
   }
   @media print {
     padding-bottom: 0;
-    //position:fixed;
-    //bottom:0;
   }
 `
 const Footer = () => {
