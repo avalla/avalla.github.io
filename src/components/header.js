@@ -43,7 +43,7 @@ const Header = ({ setShowConsole }) => {
       <div className="badges buttons is-centered print-hidden">
         <a
           href="https://linkedin.com/in/avalla"
-          aria-label="github"
+          aria-label="linkedin"
           rel="noreferrer"
           target="_blank"
         >
@@ -66,8 +66,8 @@ const Header = ({ setShowConsole }) => {
           />
         </a>
         <a
-          href="https://stackoverflow.com/story/avalla"
-          aria-label="github"
+          href="https://www.linkedin.com/in/avalla/"
+          aria-label="stackoverflow"
           rel="noreferrer"
           target="_blank"
         >

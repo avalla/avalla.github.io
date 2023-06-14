@@ -17,6 +17,15 @@ export default function Information() {
           <br />
           Website&nbsp;
           <a href="https://avalla.github.io"><strong>https://avalla.github.io</strong></a>
+          <br />
+          Github&nbsp;
+          <a href="https://github.com/avalla"><strong>https://avalla.github.io</strong></a>
+          <br />
+          Linkedin&nbsp;
+          <a href="https://www.linkedin.com/in/avalla/"><strong>https://www.linkedin.com/in/avalla/</strong></a>
+          <br />
+          Stackoverflow&nbsp;
+          <a href="https://stackoverflow.com/users/876314/avalla"><strong>https://stackoverflow.com/users/876314/avalla</strong></a>
         </p>
       </article>
     </section>
