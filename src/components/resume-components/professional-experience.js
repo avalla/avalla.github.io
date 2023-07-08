@@ -16,16 +16,24 @@ export default function ProfessionalExperience() {
           <small className='has-text-weight-light'>Turin, Italy</small>
         </p>
         <p>
-          Developed seamless integrations between BDroppy, a dropshipping application, and various external
-          ecommerce platforms, including Shopify, Squarespace, Wix, and EKM. Applications successfully published on both
-          the Shopify AppStore and Wix AppStore, enhancing user experience and expanding business reach.
+          Developed seamless integrations between BDroppy, a dropshipping application, and various external ecommerce
+          platforms, including Shopify, Squarespace, Wix, and EKM, using a queue system that supports over 50,000
+          external stores.
 
-          Pioneered the development of a BI platform, utilizing advanced technologies such as BigQuery,
-          AirByte, CubeJs, and DataStudio. This platform empowered businesses to analyze costs and ROI driving
-          data-informed decision-making and strategic growth.
+          Developed two different applications that were successfully published on the Shopify AppStore and Wix
+          AppStore, expanding the business's reach.
+
+          Pioneered the development of a BI platform, utilizing technologies such as BigQuery, Airbyte, Cube.js, and
+          DataStudio. This platform empowered businesses to analyze costs and ROI, enabling data-informed
+          decision-making and strategic growth.
+
+          Designed the software architecture for a React Native mobile application.
+
+          Migrated CI/CD from Jenkins to GitHub Actions
         </p>
         <p className='is-italic'>
-          Typescript, NodeJs, React, Jest, Redux, Moleculer, Redis, MongoDb, BigQuery, CubeJs, Shopify, Sonarqube
+          Typescript, NodeJs, React, React Native, Jest, Redux, Moleculer, Redis, MongoDb, BigQuery, CubeJs, Shopify,
+          Sonarqube
         </p>
       </article>
       {/*AGILE FACTORY*/}
@@ -41,11 +49,13 @@ export default function ProfessionalExperience() {
         </p>
         <p>
           Created a real-time MES solution for SMEs, revolutionizing manufacturing processes. Integrated with IIoT
-          devices via OPC-UA/MQTT and customer ERPs via ETL. Developed two web applications with GraphQL for efficient
-          communication between front-end and back-end components.
+          devices via OPC-UA/MQTT and customers' ERPs via ETL. Developed two web applications with GraphQL for efficient
+          communication between front-end and back-end components. The team was made up of four people; I designed the
+          software architecture and worked as the project maintainer, conducting code reviews for other team members.
+          Tasks and milestones were managed on GitHub Issues using custom types.
         </p>
         <p className='is-italic'>
-          NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, MongoDb, Redis, Github, Docker, Mqtt, Moleculer, OPC-UA,
+          NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, MongoDb, Redis, GitHub, Docker, Mqtt, Moleculer, OPC-UA,
           S3, Lerna, Kettle, Sonarqube
         </p>
       </article>
