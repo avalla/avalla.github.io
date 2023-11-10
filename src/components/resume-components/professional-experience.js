@@ -16,7 +16,7 @@ export default function ProfessionalExperience() {
           <small className='has-text-weight-light'>Turin, Italy</small>
         </p>
         <p>
-          Developed seamless integrations between BDroppy, a dropshipping application, and various external ecommerce
+          Engineered integrations between BDroppy, a dropshipping application, and various external ecommerce
           platforms, including Shopify, Squarespace, Wix, and EKM, using a queue system that supports over 50,000
           external stores.
 
@@ -48,11 +48,12 @@ export default function ProfessionalExperience() {
           <small className='has-text-weight-light'>Turin, Italy</small>
         </p>
         <p>
-          Created a real-time MES solution for SMEs, revolutionizing manufacturing processes. Integrated with IIoT
-          devices via OPC-UA/MQTT and customers' ERPs via ETL. Developed two web applications with GraphQL for efficient
+          Designed and developed a real-time MES solution for SMEs, for management and monitoring of manufacturing
+          processes. Integrated with IIoT
+          devices via OPC-UA or MQTT and customers' ERPs via ETL. Developed two web applications with GraphQL for efficient
           communication between front-end and back-end components. The team was made up of four people; I designed the
           software architecture and worked as the project maintainer, conducting code reviews for other team members.
-          Tasks and milestones were managed on GitHub Issues using custom types.
+          Tasks and milestones were managed on GitHub Issues.
         </p>
         <p className='is-italic'>
           NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, MongoDb, Redis, GitHub, Docker, Mqtt, Moleculer, OPC-UA,
@@ -68,7 +69,7 @@ export default function ProfessionalExperience() {
         <p className='subtitle is-5 is-uppercase'>
           <a href='https://www.industrial-cloud.com'>Industrial Cloud</a>
           {' - '}
-          Politecnico di Torino Spinoff Company
+          Politecnico di Torino Spin off Company
           {' :: '}
           <small className='has-text-weight-light'>Turin, Italy</small>
         </p>
