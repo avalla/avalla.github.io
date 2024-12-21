@@ -25,7 +25,7 @@ export default function TechnicalSkills() {
           <strong>MongoDb, BigQuery, Postgresql, SqlServer, MySql, Sqlite, Oracle</strong>
           <br />
           Business Intelligence and DataWarehouse&nbsp;
-          <strong>Cubejs, BigQuery, Airbyte, SSIS, SSRS, Pentaho Kettle</strong>
+          <strong>CubeJs, BigQuery, Airbyte, SSIS, SSRS, Pentaho Kettle</strong>
           <br />
           Operating systems&nbsp;
           <strong>macOS, Linux, Unix, Windows</strong>
@@ -34,7 +34,7 @@ export default function TechnicalSkills() {
           <strong>Docker, CI/CD on Github and GitLab</strong>
           <br />
           Cloud&nbsp;
-          <strong>Azure, AWS</strong>
+          <strong>Azure, AWS, GCP</strong>
         </p>
       </article>
     </section>
