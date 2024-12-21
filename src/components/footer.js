@@ -23,10 +23,6 @@ const Footer = () => {
     <StyledFooter className="footer">
       <div className="container">
         <section>
-          <p className="print-only">
-            Autorizzo il trattamento dei dati personali contenuti nel mio
-            curriculum vitae in base all’art. 13 GDPR 679/16.
-          </p>
           <p className="print-hidden">
             Andrea Valla
             <br />

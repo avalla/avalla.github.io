@@ -76,6 +76,10 @@ const IndexPage = () => {
             <Languages />
             <Education />
             <OtherProjects />
+            <p className="print-only">
+              Autorizzo il trattamento dei dati personali contenuti nel mio
+              curriculum vitae in base all’art. 13 GDPR 679/16.
+            </p>
           </div>
         </div>
       </Layout>
