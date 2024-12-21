@@ -7,7 +7,7 @@ export default function ProfessionalExperience() {
       {/*IDT*/}
       <article>
         <h4 className='title is-4 is-uppercase'>
-          Full stack developer and system administrator :: {' '}
+          Solution architect, full stack developer and system administrator :: {' '}
           <small className='has-text-weight-light'>Feb 2022 - Today</small>
         </h4>
         <p className='subtitle is-5 is-uppercase'>
@@ -16,24 +16,20 @@ export default function ProfessionalExperience() {
           <small className='has-text-weight-light'>Turin, Italy</small>
         </p>
         <p>
-          Engineered integrations between BDroppy, a dropshipping application, and various external ecommerce
-          platforms, including Shopify, Squarespace, Wix, and EKM, using a queue system that supports over 50,000
-          external stores.
+          Developed seamless integrations between BDroppy, a dropshipping application, and various external ecommerce
+          platforms, including Shopify, Squarespace, Wix, and EKM. Applications successfully published on both the
+          Shopify AppStore and Wix AppStore, enhancing user experience and expanding business reach.
 
-          Developed two different applications that were successfully published on the Shopify AppStore and Wix
-          AppStore, expanding the business's reach.
+          Architected and developed Aidify.cx, an AI-powered chatbot platform designed for seamless integration with
+          multiple ecommerce platforms. Leveraged advanced AI frameworks to deliver personalized customer interactions,
+          driving engagement and improving conversion rates.
 
-          Pioneered the development of a BI platform, utilizing technologies such as BigQuery, Airbyte, Cube.js, and
-          DataStudio. This platform empowered businesses to analyze costs and ROI, enabling data-informed
+          Pioneered the development of a BI platform, utilizing advanced technologies such as BigQuery, AirByte, CubeJs,
+          and DataStudio. This platform empowered businesses to analyze costs and ROI, driving data-informed
           decision-making and strategic growth.
-
-          Designed the software architecture for a React Native mobile application.
-
-          Migrated CI/CD from Jenkins to GitHub Actions
         </p>
         <p className='is-italic'>
-          Typescript, NodeJs, React, React Native, Jest, Redux, Moleculer, Redis, MongoDb, BigQuery, CubeJs, Shopify,
-          Sonarqube
+          Typescript, NodeJs, React, Jest, Redux, Moleculer, Redis, MongoDb, BigQuery, CubeJs, Shopify, Sonarqube, PostgreSQL, Langchain
         </p>
       </article>
       {/*AGILE FACTORY*/}
@@ -48,15 +44,12 @@ export default function ProfessionalExperience() {
           <small className='has-text-weight-light'>Turin, Italy</small>
         </p>
         <p>
-          Designed and developed a real-time MES solution for SMEs, for management and monitoring of manufacturing
-          processes. Integrated with IIoT
-          devices via OPC-UA or MQTT and customers' ERPs via ETL. Developed two web applications with GraphQL for efficient
-          communication between front-end and back-end components. The team was made up of four people; I designed the
-          software architecture and worked as the project maintainer, conducting code reviews for other team members.
-          Tasks and milestones were managed on GitHub Issues.
+          Created a real-time MES solution for SMEs, revolutionizing manufacturing processes. Integrated with IIoT
+          devices via OPC-UA/MQTT and customer ERPs via ETL. Developed two web applications with GraphQL for efficient
+          communication between front-end and back-end components.
         </p>
         <p className='is-italic'>
-          NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, MongoDb, Redis, GitHub, Docker, Mqtt, Moleculer, OPC-UA,
+          NodeJs, GraphQL, React, Jest, Cypress, Apollo, Redux, MongoDb, Redis, Github, Docker, Mqtt, Moleculer, OPC-UA,
           S3, Lerna, Kettle, Sonarqube
         </p>
       </article>
@@ -69,7 +62,7 @@ export default function ProfessionalExperience() {
         <p className='subtitle is-5 is-uppercase'>
           <a href='https://www.industrial-cloud.com'>Industrial Cloud</a>
           {' - '}
-          Politecnico di Torino Spin off Company
+          Politecnico di Torino Spinoff Company
           {' :: '}
           <small className='has-text-weight-light'>Turin, Italy</small>
         </p>

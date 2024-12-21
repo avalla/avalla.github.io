@@ -6,12 +6,17 @@ export default function ProfessionalSummary() {
       <h2 className='title is-2'>Professional summary</h2>
       <article>
         <p>
-          Experienced Full Stack Developer dedicated to crafting enterprise-level web applications with precision.
-          Proficient in both client and server-side programming, expert in software engineering with a focus on robust
-          design, coding, testing, and seamless implementation.
+          Experienced Full Stack Developer: Crafting enterprise-level and highly scalable web applications with
+          precision. Proficient in both client and server-side programming, ensuring comprehensive solutions.
         </p>
-        <p> Passionate about staying ahead with cutting-edge technology, regularly embracing new systems, libraries, and
-          frameworks. Seasoned Linux user with a deep affinity for shells and a passion for mastering the command line.
+        <p> Well-versed in all facets of software engineering, from meticulous analysis and thoughtful design to
+          flawless coding, rigorous testing, and seamless implementation.
+        </p>
+        <p> Passionate about continuous learning and embracing cutting-edge technology, staying at the forefront of
+          evolving systems, libraries, and frameworks.
+        </p>
+        <p> A seasoned Linux user since '95, with a deep-rooted affinity for shells and a passion for mastering the
+          command line.
         </p>
       </article>
     </section>
