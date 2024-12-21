@@ -6,23 +6,27 @@ import { faTerminal, faFilePdf } from "@fortawesome/free-solid-svg-icons"
 import { saveAs } from "file-saver"
 
 const StyledHeader = styled.header`
-  padding: 6rem 0 2rem;
-  @media print {
-    padding: 2rem 0;
-  }
+    padding: 6rem 0 2rem;
+    @media print {
+        padding: 2rem 0;
+        .title span {
+            margin-left: 1.5rem;
+        }
+    }
 
-  .title.is-1 {
-    letter-spacing: 1rem;
-    margin-bottom: 2.5rem;
-    font-size: 5rem;
-  }
+    .title.is-1 {
+        letter-spacing: 1rem;
+        margin-bottom: 2.5rem;
+        font-size: 5rem;
+    }
 
-  .subtitle.is-3 {
-    font-weight: 300;
-  }
-  .badges a:not(:last-child) {
-    margin-right: 5px;
-  }
+    .subtitle.is-3 {
+        font-weight: 300;
+    }
+
+    .badges a:not(:last-child) {
+        margin-right: 5px;
+    }
 `
 
 const Header = ({ setShowConsole }) => {
@@ -35,7 +39,7 @@ const Header = ({ setShowConsole }) => {
   return (
     <StyledHeader className="has-text-centered has-text-grey-dark is-uppercase">
       <h1 className="title is-1">
-        Andrea <span className="has-text-link">Valla</span>
+        Andrea<span className="has-text-link">Valla</span>
       </h1>
       <p className="subtitle is-3 is-uppercase">
         <small>Solution Architect - Full stack developer - BI developer</small>
