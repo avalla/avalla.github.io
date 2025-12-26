@@ -39,6 +39,16 @@ export default function OtherProjects() {
           access. Utilized a user-friendly Wordpress panel for content managers to configure and update the
           application's contents.
         </p>
+        <hr />
+        <h3 className='title is-3'>
+          Recalibra
+          {' :: '}
+          <small className='has-text-weight-light'>2025</small>
+        </h3>
+        <p>
+          Developing a mobile application for vagus nerve stimulation therapy. Built with React Native to deliver
+          a cross-platform experience for iOS and Android. Currently in development.
+        </p>
       </article>
     </section>
   );

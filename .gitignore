@@ -70,3 +70,6 @@ yarn-error.log
 
 codealike.json
 .idea
+
+# Snyk Security Extension - AI Rules (auto-generated)
+.windsurf/rules/snyk_rules.md

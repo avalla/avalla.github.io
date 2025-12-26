@@ -4,11 +4,12 @@ import Layout from "../layouts/layout"
 import Seo from "../components/seo"
 import useResponsive from '../hooks/useResponsive';
 import ProfessionalSummary from "../components/resume-components/professional-summary"
+import KeyAchievements from "../components/resume-components/key-achievements"
 import TechnicalSkills from "../components/resume-components/technical-skills"
+import FavoriteStack from "../components/resume-components/favorite-stack"
 import ProfessionalExperience from "../components/resume-components/professional-experience"
 import Information from "../components/resume-components/information"
 import Languages from "../components/resume-components/languages"
-import Education from "../components/resume-components/education"
 import OtherProjects from "../components/resume-components/other-projects"
 
 const StyledContainer = styled.div`
@@ -51,9 +52,9 @@ const IndexPage = () => {
           <Information />
           <Languages />
           <ProfessionalSummary />
-          <TechnicalSkills />
+          <KeyAchievements />
           <ProfessionalExperience />
-          <Education />
+          <TechnicalSkills />
           <OtherProjects />
         </Layout>
       </StyledContainer>
@@ -67,14 +68,15 @@ const IndexPage = () => {
           {/*MAIN*/}
           <div className="column is-8">
             <ProfessionalSummary />
-            <TechnicalSkills />
             <ProfessionalExperience />
+            <TechnicalSkills />
           </div>
           {/*SIDEBAR*/}
           <div className="column is-4">
             <Information />
             <Languages />
-            <Education />
+            <KeyAchievements />
+            <FavoriteStack />
             <OtherProjects />
             <p className="print-only">
               Autorizzo il trattamento dei dati personali contenuti nel mio

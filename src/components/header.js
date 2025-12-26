@@ -8,7 +8,7 @@ import { saveAs } from "file-saver"
 const StyledHeader = styled.header`
     padding: 6rem 0 2rem;
     @media print {
-        padding: 2rem 0;
+        padding: 1rem 0;
         .title span {
             margin-left: 1.5rem;
         }
@@ -42,7 +42,15 @@ const Header = ({ setShowConsole }) => {
         Andrea<span className="has-text-link">Valla</span>
       </h1>
       <p className="subtitle is-3 is-uppercase">
-        <small>Solution Architect - Full stack developer - BI developer</small>
+        <small>Product / Full-Stack Engineer | End-to-End Systems, Integrations & AI Platforms</small>
+      </p>
+      <p className="subtitle is-5">
+        <small>
+          Turin, Italy{' | '}
+          <a href="mailto:valla.andrea@gmail.com">valla.andrea@gmail.com</a>
+          {' | '}
+          <a href="https://avalla.github.io">avalla.github.io</a>
+        </small>
       </p>
       <div className="badges buttons is-centered print-hidden">
         <a
@@ -70,7 +78,7 @@ const Header = ({ setShowConsole }) => {
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/avalla/"
+          href="https://stackoverflow.com/users/876314"
           aria-label="stackoverflow"
           rel="noreferrer"
           target="_blank"

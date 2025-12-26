@@ -6,35 +6,23 @@ export default function TechnicalSkills() {
       <h2 className="title is-2">Technical skills</h2>
       <article>
         <p>
-          Frontend&nbsp;
-          <strong>React, Redux, Apollo, Gatsby, Gulp, Sass, Webpack</strong>
+          Languages:&nbsp;
+          <strong>JavaScript, TypeScript, C#, Swift, PHP</strong>
           <br />
-          Backend&nbsp;
-          <strong>NodeJs, Express, Koa, GraphQL, AspMVC, Php</strong>
+          Frontend:&nbsp;
+          <strong>React, Apollo, Urql, Tailwind, Vite</strong>
           <br />
-          Mobile&nbsp;
-          <strong> iOS, basic knowledge of android development </strong>
+          Backend &amp; Services:&nbsp;
+          <strong>Bun, Node.jsExpress, GraphQL, Moleculer, Deno</strong>
           <br />
-          Testing&nbsp;
-          <strong>Jest, Cypress</strong>
+          Data / AI / BI:&nbsp;
+          <strong>BigQuery, Airbyte, Cube.js, LangChain</strong>
           <br />
-          Languages&nbsp;
-          <strong>Javascript, Typescript, C#, Swift, Php, Objective-C</strong>
+          Databases:&nbsp;
+          <strong>PostgreSQL, MongoDB, SQL Server, MySQL</strong>
           <br />
-          Databases&nbsp;
-          <strong>MongoDb, BigQuery, Postgresql, SqlServer, MySql, Sqlite, Oracle</strong>
-          <br />
-          Business Intelligence and DataWarehouse&nbsp;
-          <strong>CubeJs, BigQuery, Airbyte, SSIS, SSRS, Pentaho Kettle</strong>
-          <br />
-          Operating systems&nbsp;
-          <strong>macOS, Linux, Unix, Windows</strong>
-          <br />
-          Devops&nbsp;
-          <strong>Docker, CI/CD on Github and GitLab</strong>
-          <br />
-          Cloud&nbsp;
-          <strong>Azure, AWS, GCP</strong>
+          DevOps / Cloud:&nbsp;
+          <strong>Docker, GitHub Actions, GitLab CI, AWS, GCP, Azure</strong>
         </p>
       </article>
     </section>

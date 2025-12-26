@@ -42,6 +42,7 @@ const GlobalStyle = createGlobalStyle`
     }
     .section {
       border-top: none !important;
+        margin-bottom: 1rem;
     }
     h2.title {
       text-decoration: underline;

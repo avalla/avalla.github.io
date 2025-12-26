@@ -16,20 +16,18 @@ export default function ProfessionalExperience() {
           <small className='has-text-weight-light'>Turin, Italy</small>
         </p>
         <p>
-          Developed seamless integrations between BDroppy, a dropshipping application, and various external ecommerce
-          platforms, including Shopify, Squarespace, Wix, and EKM. Applications successfully published on both the
-          Shopify AppStore and Wix AppStore, enhancing user experience and expanding business reach.
+          Built and shipped production integrations between BDroppy and major ecommerce platforms (Shopify, Squarespace,
+          Wix, EKM), publishing apps on Shopify and Wix app stores.
 
-          Architected and developed Aidify.cx, an AI-powered chatbot platform designed for seamless integration with
-          multiple ecommerce platforms. Leveraged advanced AI frameworks to deliver personalized customer interactions,
-          driving engagement and improving conversion rates.
+          Architected Aidify.cx, an AI-powered chatbot platform integrated across ecommerce channels.
 
-          Pioneered the development of a BI platform, utilizing advanced technologies such as BigQuery, AirByte, CubeJs,
-          and DataStudio. This platform empowered businesses to analyze costs and ROI, driving data-informed
-          decision-making and strategic growth.
+          Delivered a BI platform (BigQuery, AirByte, CubeJs, DataStudio) enabling cost and ROI analytics.
+
+          Built <a href="https://dev.autoepoque.com">AutoEpoque</a>, a vintage car marketplace (auctions + listings)
+          using Supabase + React, with database testing via pgTAP.
         </p>
         <p className='is-italic'>
-          Typescript, NodeJs, React, Jest, Redux, Moleculer, Redis, MongoDb, BigQuery, CubeJs, Shopify, Sonarqube, PostgreSQL, Langchain
+          Typescript, NodeJs, Bun, Deno, React, Apollo, Urql, Jest, pgTAP, Redux, Moleculer, Redis, MongoDb, BigQuery, CubeJs, Shopify, Sonarqube, PostgreSQL, Supabase, BullMq, Langchain, Algolia
         </p>
       </article>
       {/*AGILE FACTORY*/}

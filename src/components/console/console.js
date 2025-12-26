@@ -13,10 +13,10 @@ Write "help" to get available commands`
 
 const BIO = `
 # Andrea Valla's bio
- 
-Experienced full stack programmer: developed enterprise level and scalable web applications. Experience in both client side and server side programming.
-Background in all steps of software engineering including analysis, design, coding, testing and implementation.
-Enjoy learning and staying current on bleeding edge technology, systems, libraries and frameworks.
+
+Product / Full-Stack Engineer with 20+ years of experience building complex end-to-end systems, integrations, and
+AI-enabled platforms.
+Thrives in small teams with real ownership and responsibility for architecture through production.
 Grown with shells, linux user since '95 :)
 `
 const CONTACTS = `
@@ -26,22 +26,37 @@ const CONTACTS = `
 - Phone +39 335 82 30 421
 - Email valla.andrea@gmail.com
 - Website https://avalla.github.io
+- Github https://github.com/avalla
+- Linkedin https://www.linkedin.com/in/avalla/
+- Stackoverflow https://stackoverflow.com/users/876314/avalla
 `
 
 const SKILLS = `
 # Andrea Valla's skills
 
-- Frontend: React, Redux, Apollo, Gatsby, Gulp, Sass, Webpack
-- Backend: NodeJs, Express, Koa, GraphQL, AspMVC, Php
-- Mobile: iOS, basic knowledge of android development
-- Testing: Jest, Cypress
-- Languages: Javascript, Typescript, C#, Swift, Php, Objective-C
-- Tools: Docker, Lerna
-- Databases: MongoDb, SqlServer, MySql, Sqlite, Oracle
-- Business Intelligence: SSIS, SSRS, Pentaho Kettle, Cubejs
+- Languages: JavaScript, TypeScript, C#, Swift, PHP
+- Frontend: React, Gatsby, Redux, Apollo, Urql, Tailwind, Vite
+- Backend & Services: Node.js, Express, Koa, GraphQL, Moleculer, Bun, Deno
+- Data / AI / BI: BigQuery, Airbyte, Cube.js, LangChain
+- Databases: PostgreSQL, MongoDB, SQL Server, MySQL
+- DevOps / Cloud: Docker, GitHub Actions, GitLab CI, AWS, GCP, Azure
 - Operating systems: macOS, Linux, Unix, Windows
-- Devops: CI/CD with gitlab pipelines and github actions
-- Cloud: Azure, AWS
+`
+
+const PROJECTS = `
+# Andrea Valla's projects
+
+- AutoEpoque (BrandsDistribution): https://dev.autoepoque.com
+  Marketplace for vintage cars with auctions and listings (Supabase, React, pgTAP)
+
+- Recalibra (2025)
+  Mobile app for vagus nerve stimulation therapy (React Native) - in development
+
+- Malingering (2020): https://malingering.netlify.app
+  Psychological tests effectiveness analysis (Gatsby, React, Redux, FaunaDB)
+
+- Sphere Contents (2020): https://spherecontents.com/
+  IPs browser for movies/serials/books/comics (Gatsby, React, Redux, Algolia, Wordpress)
 `
 
 /**
@@ -153,7 +168,7 @@ const Console = ({ setShowConsole }) => {
     },
     show: {
       description: "Shows information",
-      usage: 'show <bio|contacts|skills>',
+      usage: 'show <bio|contacts|skills|projects>',
       fn: (type) => {
         switch (type) {
           case "bio":
@@ -162,10 +177,12 @@ const Console = ({ setShowConsole }) => {
             return CONTACTS
           case "skills":
             return SKILLS
+          case "projects":
+            return PROJECTS
           case "":
           case null:
           case undefined:
-            return 'Please choose between "bio" and "contacts"'
+            return 'Please choose between "bio", "contacts", "skills" and "projects"'
           default:
             return "Error, type not recognized"
         }
