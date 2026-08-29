@@ -3,7 +3,7 @@ const resume = {
     name: 'Andrea Valla',
     givenName: 'Andrea',
     familyName: 'Valla',
-    headline: 'Staff-level Product Engineer | Full-Stack, Architecture & AI Systems',
+    headline: 'Software Architect & Product Engineer | Full-Stack, Data & AI Systems',
     location: 'Turin, Italy',
     phone: '+39 335 82 30 421',
     email: 'valla.andrea@gmail.com',
@@ -15,9 +15,9 @@ const resume = {
     },
   },
   seoDescription:
-    'Andrea Valla is a Staff-level Product Engineer with 20+ years of experience across full-stack product development, architecture, integrations, data platforms, production systems, and AI-enabled software.',
+    'Andrea Valla is a software architect and product engineer with 20+ years of experience across full-stack product development, integrations, data platforms, production systems, and AI-enabled software.',
   summary: [
-    'Staff-level product and full-stack engineer with 20+ years of experience designing, building, and operating software systems end to end. Strong background in TypeScript, React, Node.js, PostgreSQL, GraphQL, integrations, data platforms, infrastructure, and AI-enabled products.',
+    'Product-focused software architect and full-stack engineer with 20+ years of experience designing, building, and operating software systems end to end. Strong background in TypeScript, React, Node.js, PostgreSQL, GraphQL, integrations, data platforms, infrastructure, and AI-enabled products.',
     'Former CTO and co-founder who turns ambiguous product and technical problems into simple architectures and production systems. Comfortable working across discovery, system design, implementation, deployment, operations, data, and customer-facing concerns, with a bias for explicit boundaries, reusable abstractions, and accountable decisions.',
   ],
   experience: [
