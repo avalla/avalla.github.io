@@ -35,8 +35,10 @@ const StyledHeader = styled.header`
     margin: 0;
     color: var(--ink);
     font-size: clamp(3.6rem, 6vw, 5.8rem);
+    font-weight: 550;
     line-height: 1;
-    letter-spacing: -0.06em;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
   }
 
   .title .family-name {
