@@ -1,63 +1,49 @@
-import React, { useRef, useState } from "react"
-import PropTypes from "prop-types"
-import Terminal from "react-console-emulator"
-import styled from "styled-components"
-import "jetbrains-mono"
-import { savePDF } from "../../services/helpers"
-import pkg from "../../../package.json"
+import React, { useRef, useState } from 'react';
+import PropTypes from 'prop-types';
+import Terminal from 'react-console-emulator';
+import styled from 'styled-components';
+import 'jetbrains-mono';
+import { savePDF } from '../../services/helpers';
+import resume from '../../data/resume';
+import pkg from '../../../package.json';
 
-const VERSION = pkg.version
+const VERSION = pkg.version;
 const WELCOME = `Welcome to the AV terminal emulator ${VERSION}
 Please be careful, it's a beta release
-Write "help" to get available commands`
+Write "help" to get available commands`;
 
 const BIO = `
-# Andrea Valla's bio
+# ${resume.profile.name}'s bio
 
-Product / Full-Stack Engineer with 20+ years of experience building complex end-to-end systems, integrations, and
-AI-enabled platforms.
-Thrives in small teams with real ownership and responsibility for architecture through production.
-Grown with shells, linux user since '95 :)
-`
+${resume.profile.headline}
+
+${resume.summary.join('\n\n')}
+`;
+
 const CONTACTS = `
-# Andrea Valla's contacts
+# ${resume.profile.name}'s contacts
 
-- Birth date 9 august 1980, Turin, Italy
-- Phone +39 335 82 30 421
-- Email valla.andrea@gmail.com
-- Website https://avalla.github.io
-- Github https://github.com/avalla
-- Linkedin https://www.linkedin.com/in/avalla/
-- Stackoverflow https://stackoverflow.com/users/876314/avalla
-`
+- ${resume.profile.location}
+- Phone ${resume.profile.phone}
+- Email ${resume.profile.email}
+- Website ${resume.profile.website}
+- GitHub ${resume.profile.social.github}
+- LinkedIn ${resume.profile.social.linkedin}
+`;
 
 const SKILLS = `
-# Andrea Valla's skills
+# ${resume.profile.name}'s core technologies
 
-- Languages: JavaScript, TypeScript, C#, Swift, PHP
-- Frontend: React, Gatsby, Redux, Apollo, Urql, Tailwind, Vite
-- Backend & Services: Node.js, Express, Koa, GraphQL, Moleculer, Bun, Deno
-- Data / AI / BI: BigQuery, Airbyte, Cube.js, LangChain
-- Databases: PostgreSQL, MongoDB, SQL Server, MySQL
-- DevOps / Cloud: Docker, GitHub Actions, GitLab CI, AWS, GCP, Azure
-- Operating systems: macOS, Linux, Unix, Windows
-`
+${resume.technologies.map(({ category, items }) => `- ${category}: ${items.join(', ')}`).join('\n')}
+`;
 
 const PROJECTS = `
-# Andrea Valla's projects
+# ${resume.profile.name}'s selected systems
 
-- AutoEpoque (BrandsDistribution): https://dev.autoepoque.com
-  Marketplace for vintage cars with auctions and listings (Supabase, React, pgTAP)
-
-- Recalibra (2025)
-  Mobile app for vagus nerve stimulation therapy (React Native) - in development
-
-- Malingering (2020): https://malingering.netlify.app
-  Psychological tests effectiveness analysis (Gatsby, React, Redux, FaunaDB)
-
-- Sphere Contents (2020): https://spherecontents.com/
-  IPs browser for movies/serials/books/comics (Gatsby, React, Redux, Algolia, Wordpress)
-`
+${resume.selectedProjects
+  .map((project) => `- ${project.name} (${project.role}): ${project.url}\n  ${project.highlights.join('\n  ')}`)
+  .join('\n\n')}
+`;
 
 /**
  * Generate a progress counter
@@ -66,16 +52,16 @@ const PROJECTS = `
  * @param timeout - setInterval timeout, defaults to 5ms
  */
 function progress({ onProgress, onClean, timeout = 5 }) {
-  let counter = 0
+  let counter = 0;
   const interval = setInterval(() => {
     if (counter <= 100) {
-      onProgress && onProgress(counter)
+      onProgress && onProgress(counter);
     } else {
-      clearInterval(interval)
-      onClean && onClean()
+      clearInterval(interval);
+      onClean && onClean();
     }
-    counter++
-  }, timeout)
+    counter++;
+  }, timeout);
 }
 
 const StyledWrapper = styled.div`
@@ -93,7 +79,7 @@ const StyledWrapper = styled.div`
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     * {
-      font-family: "JetBrains Mono", monospace !important;
+      font-family: 'JetBrains Mono', monospace !important;
     }
   }
 
@@ -135,97 +121,80 @@ const StyledWrapper = styled.div`
       max-height: 70vh;
     }
   }
-`
+`;
 
 const Console = ({ setShowConsole }) => {
-  const [isDisabled, setIsDisabled] = useState(false)
-  const terminal = useRef(null)
+  const [isDisabled, setIsDisabled] = useState(false);
+  const terminal = useRef(null);
   const commands = {
     download: {
-      description: "Download PDF version",
+      description: 'Download PDF version',
       fn: () => {
-        terminal.current.pushToStdout(
-          "Downloading PDF version, contacting remote server...."
-        )
+        terminal.current.pushToStdout('Downloading PDF version, contacting remote server....');
         setTimeout(() => {
-          setIsDisabled(true)
+          setIsDisabled(true);
           progress({
-            onProgress: (counter) =>
-              terminal.current.pushToStdout(`Progress: ${counter}%`),
+            onProgress: (counter) => terminal.current.pushToStdout(`Progress: ${counter}%`),
             onClean: () => {
-              setIsDisabled(false)
-              savePDF()
+              setIsDisabled(false);
+              savePDF();
             },
             timeout: 5,
-          })
-        }, 100)
+          });
+        }, 100);
       },
     },
     echo: {
       description: 'Echo a passed string.',
       usage: 'echo <string>',
-      fn: (...args) => args.join(' ')
+      fn: (...args) => args.join(' '),
     },
     show: {
-      description: "Shows information",
+      description: 'Shows information',
       usage: 'show <bio|contacts|skills|projects>',
       fn: (type) => {
         switch (type) {
-          case "bio":
-            return BIO
-          case "contacts":
-            return CONTACTS
-          case "skills":
-            return SKILLS
-          case "projects":
-            return PROJECTS
-          case "":
+          case 'bio':
+            return BIO;
+          case 'contacts':
+            return CONTACTS;
+          case 'skills':
+            return SKILLS;
+          case 'projects':
+            return PROJECTS;
+          case '':
           case null:
           case undefined:
-            return 'Please choose between "bio", "contacts", "skills" and "projects"'
+            return 'Please choose between "bio", "contacts", "skills" and "projects"';
           default:
-            return "Error, type not recognized"
+            return 'Error, type not recognized';
         }
       },
     },
     version: {
-      description: "Prints current version",
+      description: 'Prints current version',
       fn: () => `Version ${VERSION}`,
     },
     email: {
-      description: "Sends me an email",
+      description: 'Sends me an email',
       fn: () => {
-        setTimeout(
-          () =>
-            window.open(
-              `mailto:valla.andrea@gmail.com?subject=Hello Andrea&body=Hi...`
-            ),
-          800
-        )
-        return "Opening your email client"
+        setTimeout(() => window.open(`mailto:valla.andrea@gmail.com?subject=Hello Andrea&body=Hi...`), 800);
+        return 'Opening your email client';
       },
     },
     exit: {
-      description: "Close terminal",
+      description: 'Close terminal',
       fn: () => {
-        setTimeout(() => setShowConsole(false), 500)
-        return "Bye bye..."
+        setTimeout(() => setShowConsole(false), 500);
+        return 'Bye bye...';
       },
     },
-  }
+  };
   return (
     <StyledWrapper className="modal is-active">
-      <div
-        className="modal-background"
-        role="button"
-        onClick={() => setShowConsole(false)}
-      />
+      <div className="modal-background" role="button" onClick={() => setShowConsole(false)} />
       <div className="modal-content menu">
-        <div
-          className="menu-buttons close"
-          role="button"
-          onClick={() => setShowConsole(false)}
-        />
+        <div className="menu-buttons close" role="button" onClick={() => setShowConsole(false)} />
         <div className="menu-title">AV Terminal Emulator</div>
       </div>
       <div className="terminal">
@@ -234,17 +203,17 @@ const Console = ({ setShowConsole }) => {
           autoFocus
           welcomeMessage={WELCOME}
           ref={terminal}
-          promptLabel={"me@box:~$"}
+          promptLabel={'me@box:~$'}
           disabled={isDisabled}
           locked={isDisabled}
         />
       </div>
     </StyledWrapper>
-  )
-}
+  );
+};
 
 Console.propTypes = {
   setShowConsole: PropTypes.func.isRequired,
-}
+};
 
-export default Console
+export default Console;

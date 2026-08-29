@@ -1,66 +1,42 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import useMetadata from '../hooks/useMetadata';
+import resume from '../data/resume';
 
 const StyledFooter = styled.footer`
-  font-size: 1.6rem;
-  background-color: #2c4059;
-  color: white;
-  padding: 3rem 1.5rem;
+  margin: 0;
+  padding: 2.5rem 1.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 1.2rem;
   a {
-    color: #ddd;
+    color: var(--paper);
   }
   @media print {
-    padding-bottom: 0;
+    display: none;
   }
-`
+`;
 const Footer = () => {
-  const { contacts } = useMetadata();
   return (
-    <StyledFooter className="footer">
+    <StyledFooter>
       <div className="container">
-        <section>
-          <p className="print-hidden">
-            Andrea Valla
-            <br />
-            <a href={`tel:${contacts.phone}`} aria-label="phone">
-              <small>
-                <FontAwesomeIcon icon={faPhone} size="1x" /> {contacts.phone}
-              </small>
+        <p>
+          © {new Date().getFullYear()} {resume.profile.name}
+          <span className="is-pulled-right">
+            <a
+              href="https://github.com/avalla/avalla.github.io"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="CV source on GitHub"
+            >
+              <FontAwesomeIcon icon={faGithub} size="1x" />
             </a>
-            <br />
-            <a href={`mailto:${contacts.email}`} aria-label="mail">
-              <small>
-                <FontAwesomeIcon icon={faEnvelope} size="1x" /> {contacts.email}
-              </small>
-            </a>
-          </p>
-          <p className="print-hidden">
-            <span className="has-text-white-bis" style={{ fontSize: 10 }}>
-            © {new Date().getFullYear()}
-              {` `}
-              Made in Italy with{" "}
-              <span role="img" aria-label="love">
-              ❤️
-            </span>
-            </span>
-            <span className="is-pulled-right">
-              <a
-                href="https://github.com/avalla/avalla.github.io"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faGithub} size="1x" />
-              </a>
-            </span>
-          </p>
-        </section>
+          </span>
+        </p>
       </div>
     </StyledFooter>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

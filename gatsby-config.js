@@ -1,19 +1,17 @@
+const resume = require('./src/data/resume');
+
 module.exports = {
   siteMetadata: {
-    title: `Andrea Valla`,
-    description: `Andrea Valla - Solution architect | Full Stack Developer`,
+    title: resume.profile.name,
+    description: resume.seoDescription,
     author: `@avalla`,
     sources: 'https://github.com/avalla/avalla.github.io',
     contacts: {
-      phone: "+39 335 82 30 421",
-      email: "valla.andrea@gmail.com",
-      website: "https://avalla.github.io",
+      phone: resume.profile.phone,
+      email: resume.profile.email,
+      website: resume.profile.website,
     },
-    social: {
-      github: "https://github.com/avalla",
-      linkedin: "https://linkedin.com/in/avalla",
-      stackoverflow: "https://stackoverflow.com/users/876314",
-    },
+    social: resume.profile.social,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -34,16 +32,16 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Montserrat`],
-        display: "swap",
+        display: 'swap',
       },
     },
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: "GTM-MKCWNDK",
+        id: 'GTM-MKCWNDK',
         includeInDevelopment: false,
-        defaultDataLayer: { platform: "gatsby" },
+        defaultDataLayer: { platform: 'gatsby' },
       },
     },
   ],
-}
+};
