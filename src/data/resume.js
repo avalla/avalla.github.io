@@ -81,9 +81,9 @@ const resume = {
       name: 'AutoEpoque',
       url: 'https://autoepoque.com',
       role: 'Product architecture & engineering at BrandsDistribution',
-      dates: '2025 - Present',
+      dates: '2025 - Sep 2026',
       highlights: [
-        'Own end-to-end architecture and implementation for a classic-car marketplace supporting classifieds and auctions.',
+        'Owned end-to-end architecture and implementation for a classic-car marketplace supporting classifieds and auctions.',
         'Built a React/TypeScript monorepo on Supabase/PostgreSQL with row-level security, BullMQ/Redis jobs, media workflows, internationalization, and pgTAP database and security tests.',
       ],
       technologies: ['TypeScript', 'React', 'PostgreSQL', 'Supabase', 'Redis', 'BullMQ', 'pgTAP'],
