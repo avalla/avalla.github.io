@@ -5,7 +5,6 @@ import Seo from '../components/seo';
 import ProfessionalSummary from '../components/resume-components/professional-summary';
 import TechnicalSkills from '../components/resume-components/technical-skills';
 import ProfessionalExperience from '../components/resume-components/professional-experience';
-import EarlierExperience from '../components/resume-components/earlier-experience';
 import Languages from '../components/resume-components/languages';
 import SelectedProjects from '../components/resume-components/selected-projects';
 import resume from '../data/resume';
@@ -36,35 +35,31 @@ const StyledContainer = styled.div`
       box-shadow: 0 1.2rem 3rem oklch(24% 0.04 255 / 0.12);
     }
 
-    .summary {
+    .summary,
+    .technologies {
       grid-column: 1 / -1;
     }
 
-    .experience,
-    .earlier-experience {
+    .experience {
       grid-column: 1;
+      grid-row: 3 / span 2;
     }
 
     .selected-projects,
-    .technologies,
     .languages {
       grid-column: 2;
     }
 
     .selected-projects {
-      grid-row: 2;
+      grid-row: 3;
     }
 
     .technologies {
-      grid-row: 3;
+      grid-row: 2;
     }
 
     .languages {
       grid-row: 4;
-    }
-
-    .earlier-experience {
-      grid-row: 3 / span 2;
     }
 
     .title.is-2 {
@@ -88,20 +83,17 @@ const StyledContainer = styled.div`
     }
 
     .summary p:last-child,
-    .earlier-item p:last-child,
     .languages p {
       margin-bottom: 0;
     }
 
     .experience-item,
-    .project-item,
-    .earlier-item {
+    .project-item {
       break-inside: avoid;
     }
 
     .experience-item:not(:last-child),
-    .project-item:not(:last-child),
-    .earlier-item:not(:last-child) {
+    .project-item:not(:last-child) {
       margin-bottom: 2.5rem;
       padding-bottom: 2.5rem;
       border-bottom: 1px solid var(--rule);
@@ -146,6 +138,7 @@ const StyledContainer = styled.div`
     }
 
     .impact-list {
+      list-style: disc outside;
       margin: 0.8rem 0 1rem 1.8rem;
       font-size: 1.45rem;
       line-height: 1.5;
@@ -176,12 +169,14 @@ const StyledContainer = styled.div`
     }
 
     .technology-groups dt {
+      display: inline;
       color: var(--ink);
       font-size: 1.35rem;
       font-weight: 700;
     }
 
     .technology-groups dd {
+      display: inline;
       margin: 0.25rem 0 0;
       color: var(--muted);
       font-size: 1.35rem;
@@ -228,16 +223,17 @@ const StyledContainer = styled.div`
       }
 
       .section:not(:last-child) {
-        margin-bottom: 4mm;
+        margin-bottom: 3mm;
       }
 
       .summary p {
         max-width: none;
-        font-size: 9.4pt;
+        font-size: 9.5pt;
         line-height: 1.38;
       }
 
       .title.is-2 {
+        break-after: avoid;
         margin-bottom: 2.5mm;
         padding-bottom: 1mm;
         border-bottom: 0.5pt solid var(--rule);
@@ -245,29 +241,43 @@ const StyledContainer = styled.div`
       }
 
       .title.is-3 {
-        font-size: 10pt;
+        font-size: 10.5pt;
       }
 
       .experience-item:not(:last-child),
-      .project-item:not(:last-child),
-      .earlier-item:not(:last-child) {
-        margin-bottom: 3mm;
-        padding-bottom: 3mm;
+      .project-item:not(:last-child) {
+        margin-bottom: 2mm;
+        padding-bottom: 2mm;
       }
 
       .entry-header {
+        display: block;
         margin-bottom: 1.5mm;
+      }
+
+      .entry-header > div {
+        display: contents;
       }
 
       .entry-organization,
       .entry-dates {
         margin-top: 0.5mm;
-        font-size: 8pt;
+        font-size: 9pt;
+      }
+
+      .entry-dates {
+        text-align: left;
+        margin-left: 3mm;
+      }
+
+      .entry-organization,
+      .entry-dates {
+        display: inline;
       }
 
       .impact-list {
         margin: 1.5mm 0 1.5mm 5mm;
-        font-size: 8.7pt;
+        font-size: 9.5pt;
         line-height: 1.32;
       }
 
@@ -277,23 +287,17 @@ const StyledContainer = styled.div`
 
       .technology-line {
         margin-top: 1.5mm;
-        font-size: 7.7pt;
+        font-size: 9pt;
       }
 
-      .selected-projects {
-        break-before: page;
-      }
-
-      .earlier-item p:last-child,
       .technology-groups dd,
       .languages p {
-        font-size: 8.5pt;
+        font-size: 9pt;
         line-height: 1.35;
       }
 
       .technology-groups {
-        columns: 2;
-        column-gap: 8mm;
+        columns: auto;
       }
 
       .technology-groups div {
@@ -305,7 +309,7 @@ const StyledContainer = styled.div`
       }
 
       .technology-groups dt {
-        font-size: 8.5pt;
+        font-size: 9pt;
       }
 
       .technology-groups dd {
@@ -317,13 +321,12 @@ const StyledContainer = styled.div`
 
 const IndexPage = () => (
   <StyledContainer>
-    <Seo title="Software Architect & Product Engineer" description={resume.seoDescription} />
+    <Seo title="Senior Full-Stack Software Engineer & Software Architect" description={resume.seoDescription} />
     <Layout>
       <ProfessionalSummary />
+      <TechnicalSkills />
       <ProfessionalExperience />
       <SelectedProjects />
-      <EarlierExperience />
-      <TechnicalSkills />
       <Languages />
     </Layout>
   </StyledContainer>

@@ -32,13 +32,13 @@ const CONTACTS = `
 `;
 
 const SKILLS = `
-# ${resume.profile.name}'s core technologies
+# ${resume.profile.name}'s technical skills
 
 ${resume.technologies.map(({ category, items }) => `- ${category}: ${items.join(', ')}`).join('\n')}
 `;
 
 const PROJECTS = `
-# ${resume.profile.name}'s selected systems
+# ${resume.profile.name}'s open source & selected projects
 
 ${resume.selectedProjects
   .map((project) => `- ${project.name} (${project.role}): ${project.url}\n  ${project.highlights.join('\n  ')}`)
