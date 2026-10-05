@@ -7,11 +7,11 @@ import { savePDF } from '../services/helpers';
 import resume from '../data/resume';
 
 const StyledHeader = styled.header`
-  padding: 5rem 1rem 2.5rem;
+  padding: 5rem var(--resume-gutter) 2.5rem;
   color: var(--ink);
 
   .header-inner {
-    max-width: 1152px;
+    max-width: var(--resume-width);
     margin: 0 auto;
     padding: 3rem 3.5rem;
     background: var(--paper);

@@ -16,7 +16,7 @@ const StyledContainer = styled.div`
     gap: 2rem;
     width: 100%;
     max-width: 100%;
-    padding: 2rem 1rem 4rem;
+    padding: 2rem 0 4rem;
     color: var(--ink);
 
     p {
