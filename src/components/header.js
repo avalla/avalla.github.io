@@ -20,11 +20,11 @@ const StyledHeader = styled.header`
   }
 
   @media print {
-    padding: 0 0 5mm;
+    padding: 0 0 3mm;
 
     .header-inner {
       max-width: none;
-      padding: 0 0 3mm;
+      padding: 0 0 2mm;
       border-bottom: 1pt solid var(--accent);
       border-radius: 0;
       box-shadow: none;
@@ -95,7 +95,7 @@ const StyledHeader = styled.header`
 
     .contact-list {
       gap: 1mm 4mm;
-      font-size: 8pt;
+      font-size: 9pt;
     }
   }
 `;
@@ -120,10 +120,10 @@ const Header = ({ setShowConsole }) => {
             <a href={resume.profile.website}>avalla.github.io</a>
           </li>
           <li>
-            <a href={resume.profile.social.linkedin}>LinkedIn</a>
+            <a href={resume.profile.social.linkedin}>{resume.profile.social.linkedin.replace(/^https?:\/\//, '')}</a>
           </li>
           <li>
-            <a href={resume.profile.social.github}>GitHub</a>
+            <a href={resume.profile.social.github}>{resume.profile.social.github.replace(/^https?:\/\//, '')}</a>
           </li>
         </ul>
         <div className="actions buttons print-hidden">

@@ -3,9 +3,9 @@ import resume from '../../data/resume';
 
 export default function SelectedProjects() {
   return (
-    <section className="section selected-projects print-page-break" aria-labelledby="projects-heading">
+    <section className="section selected-projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading" className="title is-2">
-        Selected systems
+        Open Source & Selected Projects
       </h2>
       {resume.selectedProjects.map((project) => (
         <article className="project-item" key={project.name}>
@@ -24,7 +24,7 @@ export default function SelectedProjects() {
             ))}
           </ul>
           <p className="technology-line" aria-label="Technologies used">
-            {project.technologies.join(' · ')}
+            {project.technologies.join(', ')}
           </p>
         </article>
       ))}

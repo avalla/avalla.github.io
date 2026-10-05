@@ -50,6 +50,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media print {
+    * {
+      font-family: Arial, Helvetica, sans-serif !important;
+    }
+
     :root {
       --paper: oklch(99% 0.004 250);
     }
@@ -59,6 +63,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
+      font-size: 9.5pt;
       background: var(--paper);
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
