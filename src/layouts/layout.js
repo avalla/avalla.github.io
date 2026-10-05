@@ -9,6 +9,8 @@ import Console from '../components/console';
 
 const GlobalStyle = createGlobalStyle`
   :root {
+    --resume-width: 1152px;
+    --resume-gutter: 2rem;
     --canvas: oklch(45% 0.14 255);
     --paper: oklch(98.5% 0.006 250);
     --ink: oklch(28% 0.03 255);
@@ -85,11 +87,12 @@ const StyledLayout = styled.div`
   min-height: 100vh;
   background: linear-gradient(145deg, oklch(96% 0.015 246) 0%, oklch(91% 0.035 242) 100%);
 
-  .container {
+  .resume-container {
     width: 100%;
-    max-width: 1152px;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    max-width: calc(var(--resume-width) + var(--resume-gutter) + var(--resume-gutter));
+    margin: 0 auto;
+    padding-right: var(--resume-gutter);
+    padding-left: var(--resume-gutter);
   }
   [data-tooltip]:not(.is-loading)::before,
   [data-tooltip]:not(.is-disabled)::before,
@@ -101,7 +104,7 @@ const StyledLayout = styled.div`
     min-height: 0;
     background: var(--paper);
 
-    .container {
+    .resume-container {
       max-width: none !important;
       padding: 0;
     }
@@ -115,7 +118,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header setShowConsole={setShowConsole} />
       {showConsole && <Console setShowConsole={setShowConsole} />}
-      <div className="container">
+      <div className="resume-container">
         <main>{children}</main>
       </div>
       <Footer />
