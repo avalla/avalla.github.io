@@ -22,14 +22,13 @@ Check the built website on: [https://avalla.github.io](https://avalla.github.io)
 The print layout uses one column, standard section headings, visible contact URLs,
 and Arial/Helvetica with body text at 9.5 pt and supporting text at 9 pt.
 
-After changing content or print styles:
+The build automatically generates `static/resume.pdf` from `src/data/resume.js` using
+`scripts/generate-resume-pdf.js`. The PDF is an ATS-friendly text document,
+independent of browser rendering. No manual PDF export is necessary.
 
-1. Run `yarn build` and `yarn serve`.
-2. Open the local site in Chrome/Chromium and print to PDF at A4, 100% scale,
-   using the CSS page margins and disabling browser headers and footers.
-3. Replace `static/resume.pdf` with that export. Check all pages visually and
-   verify that copying or extracting the text preserves section and experience order.
-4. Rebuild so `public/resume.pdf` contains the updated download.
+To regenerate locally, run `node scripts/generate-resume-pdf.js` or `yarn build`.
+After content changes, inspect the generated PDF and ensure all sections and
+links remain readable. The published PDF is regenerated on every build.
 
 Pull requests run the build; only pushes to `main` deploy to GitHub Pages.
 
