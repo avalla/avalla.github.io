@@ -321,7 +321,7 @@ const StyledContainer = styled.div`
 
 const IndexPage = () => (
   <StyledContainer>
-    <Seo title="Senior Full-Stack Software Engineer & Software Architect" description={resume.seoDescription} />
+    <Seo title="Software Architect & Principal-Level Full-Stack Engineer" description={resume.seoDescription} />
     <Layout>
       <ProfessionalSummary />
       <TechnicalSkills />
