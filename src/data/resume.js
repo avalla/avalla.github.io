@@ -114,7 +114,7 @@ const resume = {
       ],
       technologies: ['TypeScript', 'React', 'PostgreSQL', 'Supabase', 'Redis', 'BullMQ', 'pgTAP'],
     },
-  ],    {
+    {
       name: 'Agile Factory',
       url: 'https://www.agilefactory.it',
       role: 'Co-founder, CTO & original software architect',
@@ -127,7 +127,7 @@ const resume = {
       ],
       technologies: ['Node.js', 'React', 'GraphQL', 'MongoDB', 'Redis', 'Cypress', 'OPC UA', 'MQTT'],
     },
-
+  ],
   technologies: [
     {
       category: 'Programming Languages',
