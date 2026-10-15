@@ -4,7 +4,7 @@ const resume = {
     givenName: 'Andrea',
     familyName: 'Valla',
     headline:
-      'Senior Full-Stack Software Engineer / Software Architect | TypeScript, React, Node.js, PostgreSQL & AI Systems',
+      'Software Architect & Principal-Level Full-Stack Engineer | Industrial Systems, Distributed Software & AI Agents',
     location: 'Turin, Italy',
     phone: '+39 335 82 30 421',
     email: 'valla.andrea@gmail.com',
@@ -16,9 +16,9 @@ const resume = {
     },
   },
   seoDescription:
-    'Andrea Valla is a senior full-stack software engineer and software architect with 20+ years of experience in production software, ecommerce, industrial systems, and AI agent orchestration.',
+    'Andrea Valla is a software architect and hands-on engineer with 20+ years of experience building industrial MES platforms, distributed applications, ecommerce systems, and AI agent orchestration infrastructure.',
   summary: [
-    'Senior Full-Stack Software Engineer and Software Architect with 20+ years of experience designing, building, and operating production software. Hands-on work across TypeScript, React, Node.js/Bun, PostgreSQL, GraphQL, distributed systems, API integrations, CI/CD, and cloud infrastructure. Recent projects include AI/LLM systems, agent orchestration, ecommerce platforms, data pipelines, and Manufacturing Execution Systems (MES).',
+    'Software architect and hands-on full-stack engineer with 20+ years of experience designing, building, and operating production systems. Independently architected the foundation of Agile Factory, a modular industrial MES built for customer-specific deployments, real-time shop-floor workflows, and equipment/ERP integrations. More recently, engineered PostgreSQL-backed ecommerce applications and AI agent orchestration infrastructure. Focused on pragmatic architecture, reliability, extensibility, and long-term maintainability.',
   ],
   experience: [
     {
@@ -43,11 +43,12 @@ const resume = {
       location: 'Turin, Italy',
       dates: 'Mar 2018 - Jan 2022',
       highlights: [
-        'Co-founded and led engineering of a real-time Manufacturing Execution System (MES) for SMEs, from product strategy and software architecture through implementation, customer deployment, and production operations.',
-        'Designed Industrial Internet of Things (IIoT) and ERP integration architecture using OPC UA, MQTT, and ETL pipelines to connect industrial equipment with customer business systems.',
-        'Built two React applications and Node.js/GraphQL services using Redis, Docker, automated testing, and code-quality tooling.',
+        'Co-founded Agile Factory and independently designed and implemented its foundational MES architecture, from domain models and production workflows to customer deployments and operations.',
+        'Created a modular Node.js monorepo, separating domain models, business services and GraphQL APIs, with a lightweight plugin/hook system to extend customer-specific behavior without forking the core.',
+        'Built the React Manager and shop-floor HMI foundations, GraphQL subscriptions and schema-declared API permissions; developed integration paths for industrial equipment and ERP/ETL systems using OPC UA and MQTT.',
+        'Used Cypress end-to-end workflows to verify application behavior and generate screenshots for user documentation in the same process.',
       ],
-      technologies: ['Node.js', 'React', 'GraphQL', 'Redis', 'Docker', 'OPC UA', 'MQTT'],
+      technologies: ['Node.js', 'React', 'GraphQL', 'Apollo', 'MongoDB', 'Redis', 'Moleculer', 'Docker', 'Cypress', 'OPC UA', 'MQTT'],
     },
     {
       role: 'Full-Stack Developer',
@@ -88,6 +89,19 @@ const resume = {
     },
   ],
   selectedProjects: [
+    {
+      name: 'Agile Factory',
+      url: 'https://www.agilefactory.it',
+      role: 'Co-founder, CTO & original software architect',
+      dates: '2018 - 2022',
+      highlights: [
+        'Independently designed the foundations of a modular Manufacturing Execution System, including production orders, operations, operator-facing HMI workflows, and customer-specific deployment patterns.',
+        'Built reusable Node.js business modules, GraphQL APIs with declarative authorization and real-time subscriptions, and a lightweight plugin system for industrial integrations and extensions.',
+        'Combined Cypress end-to-end validation with screenshot generation for product manuals, reducing duplicated testing and documentation work.',
+        'The platform continued to be developed after my departure; this description refers to the architecture and capabilities I worked on through early 2022.',
+      ],
+      technologies: ['Node.js', 'React', 'GraphQL', 'MongoDB', 'Redis', 'Cypress', 'OPC UA', 'MQTT'],
+    },
     {
       name: 'AI Office',
       url: 'https://github.com/avalla/ai-office',
