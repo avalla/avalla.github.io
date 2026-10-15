@@ -431,13 +431,13 @@ ET
 BT
 /F2 10.1 Tf
 1 0 0 1 43.00 719.39 Tm
-(Agile Factory | Co-founder, CTO & original software architect) Tj
+(AI Office | Creator) Tj
 ET
 0.35 0.42 0.49 rg
 BT
 /F1 8.7 Tf
 1 0 0 1 43.00 705.39 Tm
-(2018 - 2022 | https://www.agilefactory.it) Tj
+(2026 - Present | https://github.com/avalla/ai-office) Tj
 ET
 0.16 0.22 0.30 rg
 BT
@@ -449,13 +449,13 @@ ET
 BT
 /F1 9.1 Tf
 1 0 0 1 58.00 691.39 Tm
-(Independently designed the foundations of a modular Manufacturing Execution System, including production orders,) Tj
+(Built an open-source multi-agent orchestration platform for AI agents, workflows, tasks, pipelines, and durable) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F1 9.1 Tf
 1 0 0 1 58.00 678.89 Tm
-(operations, operator-facing HMI workflows, and customer-specific deployment patterns.) Tj
+(executions.) Tj
 ET
 0.16 0.22 0.30 rg
 BT
@@ -467,157 +467,157 @@ ET
 BT
 /F1 9.1 Tf
 1 0 0 1 58.00 663.39 Tm
-(Built reusable Node.js business modules, GraphQL APIs with declarative authorization and real-time subscriptions, and a) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F1 9.1 Tf
-1 0 0 1 58.00 650.89 Tm
-(lightweight plugin system for industrial integrations and extensions.) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F2 9.1 Tf
-1 0 0 1 46.00 635.39 Tm
-(-) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F1 9.1 Tf
-1 0 0 1 58.00 635.39 Tm
-(Combined Cypress end-to-end validation with screenshot generation for product manuals, reducing duplicated testing) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F1 9.1 Tf
-1 0 0 1 58.00 622.89 Tm
-(and documentation work.) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F2 9.1 Tf
-1 0 0 1 46.00 607.39 Tm
-(-) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F1 9.1 Tf
-1 0 0 1 58.00 607.39 Tm
-(The platform grew from approximately 5 customers at my departure in 2022 to approximately 50 by 2026, continuing) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F1 9.1 Tf
-1 0 0 1 58.00 594.89 Tm
-(to evolve under a different development team. Customer counts are approximate.) Tj
-ET
-0.35 0.42 0.49 rg
-BT
-/F1 8.4 Tf
-1 0 0 1 43.00 579.39 Tm
-(Technologies: Node.js, React, GraphQL, MongoDB, Redis, Cypress, OPC UA, MQTT) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F2 10.1 Tf
-1 0 0 1 43.00 559.39 Tm
-(AI Office | Creator) Tj
-ET
-0.35 0.42 0.49 rg
-BT
-/F1 8.7 Tf
-1 0 0 1 43.00 545.39 Tm
-(2026 - Present | https://github.com/avalla/ai-office) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F2 9.1 Tf
-1 0 0 1 46.00 531.39 Tm
-(-) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F1 9.1 Tf
-1 0 0 1 58.00 531.39 Tm
-(Built an open-source multi-agent orchestration platform for AI agents, workflows, tasks, pipelines, and durable) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F1 9.1 Tf
-1 0 0 1 58.00 518.89 Tm
-(executions.) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F2 9.1 Tf
-1 0 0 1 46.00 503.39 Tm
-(-) Tj
-ET
-0.16 0.22 0.30 rg
-BT
-/F1 9.1 Tf
-1 0 0 1 58.00 503.39 Tm
 (Implemented concurrency control, task locking, LLM/model routing, audit logs, tool permissions, and governance.) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F2 9.1 Tf
-1 0 0 1 46.00 487.89 Tm
+1 0 0 1 46.00 647.89 Tm
 (-) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F1 9.1 Tf
-1 0 0 1 58.00 487.89 Tm
+1 0 0 1 58.00 647.89 Tm
 (Integrated OpenAI, Codex, and Claude Code behind provider-neutral interfaces.) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F2 9.1 Tf
-1 0 0 1 46.00 472.39 Tm
+1 0 0 1 46.00 632.39 Tm
 (-) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F1 9.1 Tf
-1 0 0 1 58.00 472.39 Tm
+1 0 0 1 58.00 632.39 Tm
 (Designed pluggable persistence and knowledge layers using PostgreSQL, SQLite, and SurrealDB, with extensible agents) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F1 9.1 Tf
-1 0 0 1 58.00 459.89 Tm
+1 0 0 1 58.00 619.89 Tm
 (and domain behavior.) Tj
 ET
 0.35 0.42 0.49 rg
 BT
 /F1 8.4 Tf
-1 0 0 1 43.00 444.39 Tm
+1 0 0 1 43.00 604.39 Tm
 (Technologies: TypeScript, Bun, PostgreSQL, SQLite, SurrealDB, OpenAI, Codex, Claude Code) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F2 10.1 Tf
-1 0 0 1 43.00 424.39 Tm
+1 0 0 1 43.00 584.39 Tm
 (AutoEpoque | Product architecture & engineering at BrandsDistribution) Tj
 ET
 0.35 0.42 0.49 rg
 BT
 /F1 8.7 Tf
-1 0 0 1 43.00 410.39 Tm
+1 0 0 1 43.00 570.39 Tm
 (2025 - Sep 2026 | https://autoepoque.com) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F2 9.1 Tf
-1 0 0 1 46.00 396.39 Tm
+1 0 0 1 46.00 556.39 Tm
 (-) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F1 9.1 Tf
-1 0 0 1 58.00 396.39 Tm
+1 0 0 1 58.00 556.39 Tm
 (Owned end-to-end architecture and implementation for a classic-car marketplace supporting classifieds and auctions.) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F2 9.1 Tf
+1 0 0 1 46.00 540.89 Tm
+(-) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F1 9.1 Tf
+1 0 0 1 58.00 540.89 Tm
+(Built a React/TypeScript monorepo on Supabase/PostgreSQL with Row-Level Security \(RLS\), BullMQ/Redis jobs, media) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F1 9.1 Tf
+1 0 0 1 58.00 528.39 Tm
+(workflows, internationalization, and pgTAP database and security tests.) Tj
+ET
+0.35 0.42 0.49 rg
+BT
+/F1 8.4 Tf
+1 0 0 1 43.00 512.89 Tm
+(Technologies: TypeScript, React, PostgreSQL, Supabase, Redis, BullMQ, pgTAP) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F2 10.1 Tf
+1 0 0 1 43.00 492.89 Tm
+(Agile Factory | Co-founder, CTO & original software architect) Tj
+ET
+0.35 0.42 0.49 rg
+BT
+/F1 8.7 Tf
+1 0 0 1 43.00 478.89 Tm
+(2018 - 2022 | https://www.agilefactory.it) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F2 9.1 Tf
+1 0 0 1 46.00 464.89 Tm
+(-) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F1 9.1 Tf
+1 0 0 1 58.00 464.89 Tm
+(Independently designed the foundations of a modular Manufacturing Execution System, including production orders,) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F1 9.1 Tf
+1 0 0 1 58.00 452.39 Tm
+(operations, operator-facing HMI workflows, and customer-specific deployment patterns.) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F2 9.1 Tf
+1 0 0 1 46.00 436.89 Tm
+(-) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F1 9.1 Tf
+1 0 0 1 58.00 436.89 Tm
+(Built reusable Node.js business modules, GraphQL APIs with declarative authorization and real-time subscriptions, and a) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F1 9.1 Tf
+1 0 0 1 58.00 424.39 Tm
+(lightweight plugin system for industrial integrations and extensions.) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F2 9.1 Tf
+1 0 0 1 46.00 408.89 Tm
+(-) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F1 9.1 Tf
+1 0 0 1 58.00 408.89 Tm
+(Combined Cypress end-to-end validation with screenshot generation for product manuals, reducing duplicated testing) Tj
+ET
+0.16 0.22 0.30 rg
+BT
+/F1 9.1 Tf
+1 0 0 1 58.00 396.39 Tm
+(and documentation work.) Tj
 ET
 0.16 0.22 0.30 rg
 BT
@@ -629,19 +629,19 @@ ET
 BT
 /F1 9.1 Tf
 1 0 0 1 58.00 380.89 Tm
-(Built a React/TypeScript monorepo on Supabase/PostgreSQL with Row-Level Security \(RLS\), BullMQ/Redis jobs, media) Tj
+(The platform grew from approximately 5 customers at my departure in 2022 to approximately 50 by 2026, continuing) Tj
 ET
 0.16 0.22 0.30 rg
 BT
 /F1 9.1 Tf
 1 0 0 1 58.00 368.39 Tm
-(workflows, internationalization, and pgTAP database and security tests.) Tj
+(to evolve under a different development team. Customer counts are approximate.) Tj
 ET
 0.35 0.42 0.49 rg
 BT
 /F1 8.4 Tf
 1 0 0 1 43.00 352.89 Tm
-(Technologies: TypeScript, React, PostgreSQL, Supabase, Redis, BullMQ, pgTAP) Tj
+(Technologies: Node.js, React, GraphQL, MongoDB, Redis, Cypress, OPC UA, MQTT) Tj
 ET
 0.77 0.81 0.87 RG
 0.6 w
