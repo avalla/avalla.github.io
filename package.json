@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "prebuild": "gatsby clean",
+    "prebuild": "gatsby clean && node scripts/generate-resume-pdf.js",
     "predeploy": "gatsby build",
     "deploy": "npx gh-pages -d public",
     "develop": "gatsby develop",
