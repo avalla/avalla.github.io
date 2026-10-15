@@ -45,8 +45,8 @@ const resume = {
       highlights: [
         'Co-founded Agile Factory and independently designed and implemented its foundational MES architecture, from domain models and production workflows to customer deployments and operations.',
         'Created a modular Node.js monorepo, separating domain models, business services and GraphQL APIs, with a lightweight plugin/hook system to extend customer-specific behavior without forking the core.',
-        'Built the React Manager and shop-floor HMI foundations, GraphQL subscriptions and schema-declared API permissions; developed integration paths for industrial equipment and ERP/ETL systems using OPC UA and MQTT.",
-        "Used Cypress end-to-end workflows to verify application behavior and generate screenshots for user documentation in the same process.',
+        'Built the React Manager and shop-floor HMI foundations, GraphQL subscriptions and schema-declared API permissions; developed integration paths for industrial equipment and ERP/ETL systems using OPC UA and MQTT.',
+        'Used Cypress end-to-end workflows to verify application behavior and generate screenshots for user documentation in the same process.',
       ],
       technologies: ['Node.js', 'React', 'GraphQL', 'Apollo', 'MongoDB', 'Redis', 'Moleculer', 'Docker', 'Cypress', 'OPC UA', 'MQTT'],
     },
