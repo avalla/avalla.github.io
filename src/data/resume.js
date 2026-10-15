@@ -91,19 +91,6 @@ const resume = {
   ],
   selectedProjects: [
     {
-      name: 'Agile Factory',
-      url: 'https://www.agilefactory.it',
-      role: 'Co-founder, CTO & original software architect',
-      dates: '2018 - 2022',
-      highlights: [
-        'Independently designed the foundations of a modular Manufacturing Execution System, including production orders, operations, operator-facing HMI workflows, and customer-specific deployment patterns.',
-        'Built reusable Node.js business modules, GraphQL APIs with declarative authorization and real-time subscriptions, and a lightweight plugin system for industrial integrations and extensions.',
-        'Combined Cypress end-to-end validation with screenshot generation for product manuals, reducing duplicated testing and documentation work.',
-        'The platform grew from approximately 5 customers at my departure in 2022 to approximately 50 by 2026, continuing to evolve under a different development team. Customer counts are approximate.',
-      ],
-      technologies: ['Node.js', 'React', 'GraphQL', 'MongoDB', 'Redis', 'Cypress', 'OPC UA', 'MQTT'],
-    },
-    {
       name: 'AI Office',
       url: 'https://github.com/avalla/ai-office',
       role: 'Creator',
@@ -127,7 +114,20 @@ const resume = {
       ],
       technologies: ['TypeScript', 'React', 'PostgreSQL', 'Supabase', 'Redis', 'BullMQ', 'pgTAP'],
     },
-  ],
+  ],    {
+      name: 'Agile Factory',
+      url: 'https://www.agilefactory.it',
+      role: 'Co-founder, CTO & original software architect',
+      dates: '2018 - 2022',
+      highlights: [
+        'Independently designed the foundations of a modular Manufacturing Execution System, including production orders, operations, operator-facing HMI workflows, and customer-specific deployment patterns.',
+        'Built reusable Node.js business modules, GraphQL APIs with declarative authorization and real-time subscriptions, and a lightweight plugin system for industrial integrations and extensions.',
+        'Combined Cypress end-to-end validation with screenshot generation for product manuals, reducing duplicated testing and documentation work.',
+        'The platform grew from approximately 5 customers at my departure in 2022 to approximately 50 by 2026, continuing to evolve under a different development team. Customer counts are approximate.',
+      ],
+      technologies: ['Node.js', 'React', 'GraphQL', 'MongoDB', 'Redis', 'Cypress', 'OPC UA', 'MQTT'],
+    },
+
   technologies: [
     {
       category: 'Programming Languages',
